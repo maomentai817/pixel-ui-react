@@ -1,0 +1,423 @@
+@font-face {
+  font-family: 'Zpix';
+  src: url('./fonts/Zpix.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PS2P';
+  src: url('./fonts/PS2P.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+
+:root {
+  --px-font-family: "PS2P", "Zpix", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  cursor: var(--px-cursor-base-src), auto;
+}
+/* font */
+@property --px-font-size-base {
+  syntax: "<length>";
+  initial-value: 14px;
+  inherits: true;
+}
+@property --px-font-size-standard {
+  syntax: "<length>";
+  initial-value: 16px;
+  inherits: true;
+}
+@property --px-font-size-small {
+  syntax: "<length>";
+  initial-value: 12px;
+  inherits: true;
+}
+@property --px-font-weight-base {
+  syntax: "<number>";
+  initial-value: 400;
+  inherits: false;
+}
+/* cursor */
+@property --px-cursor-pointer-src {
+  syntax: "<url>";
+  initial-value: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC');
+  inherits: false;
+}
+@property --px-cursor-base-src {
+  syntax: "<url>";
+  initial-value: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=');
+  inherits: false;
+}
+/* transition */
+@property --px-transition-duration {
+  syntax: "<time>";
+  initial-value: 0.2s;
+  inherits: false;
+}
+@property --px-transition-duration-400 {
+  syntax: "<time>";
+  initial-value: 0.4s;
+  inherits: false;
+}
+/* animation */
+@property --px-animation-duration {
+  syntax: "<time>";
+  initial-value: 2s;
+  inherits: false;
+}
+
+/* 颜色重定义 */
+/* primary */
+@property --px-color-primary {
+  syntax: "<color>";
+  initial-value: #209cee;
+  inherits: false;
+}
+@property --px-color-primary-dark-1 {
+  syntax: "<color>";
+  initial-value: #108de0;
+  inherits: false;
+}
+@property --px-color-primary-dark-2 {
+  syntax: "<color>";
+  initial-value: #006bb3;
+  inherits: false;
+}
+@property --px-color-primary-light-3 {
+  syntax: "<color>";
+  initial-value: #79bbff;
+  inherits: false;
+}
+@property --px-color-primary-light-5 {
+  syntax: "<color>";
+  initial-value: #a0cfff;
+  inherits: false;
+}
+@property --px-color-primary-light-7 {
+  syntax: "<color>";
+  initial-value: #c6e2ff;
+  inherits: false;
+}
+@property --px-color-primary-light-8 {
+  syntax: "<color>";
+  initial-value: #d9ecff;
+  inherits: false;
+}
+@property --px-color-primary-light-9 {
+  syntax: "<color>";
+  initial-value: #ecf5ff;
+  inherits: false;
+}
+/* success */
+@property --px-color-success {
+  syntax: "<color>";
+  initial-value: #92cc41;
+  inherits: false;
+}
+@property --px-color-success-dark-1 {
+  syntax: "<color>";
+  initial-value: #76c442;
+  inherits: false;
+}
+@property --px-color-success-dark-2 {
+  syntax: "<color>";
+  initial-value: #4aa52e;
+  inherits: false;
+}
+@property --px-color-success-light-3 {
+  syntax: "<color>";
+  initial-value: #95d475;
+  inherits: false;
+}
+@property --px-color-success-light-5 {
+  syntax: "<color>";
+  initial-value: #b3e19d;
+  inherits: false;
+}
+@property --px-color-success-light-7 {
+  syntax: "<color>";
+  initial-value: #d1edc4;
+  inherits: false;
+}
+@property --px-color-success-light-8 {
+  syntax: "<color>";
+  initial-value: #e1f3d8;
+  inherits: false;
+}
+@property --px-color-success-light-9 {
+  syntax: "<color>";
+  initial-value: #f0f9eb;
+  inherits: false;
+}
+/* warning */
+@property --px-color-warning {
+  syntax: "<color>";
+  initial-value: #f7d51d;
+  inherits: false;
+}
+@property --px-color-warning-dark-1 {
+  syntax: "<color>";
+  initial-value: #f2c409;
+  inherits: false;
+}
+@property --px-color-warning-dark-2 {
+  syntax: "<color>";
+  initial-value: #e59400;
+  inherits: false;
+}
+@property --px-color-warning-light-3 {
+  syntax: "<color>";
+  initial-value: #eebe77;
+  inherits: false;
+}
+@property --px-color-warning-light-5 {
+  syntax: "<color>";
+  initial-value: #f3d19e;
+  inherits: false;
+}
+@property --px-color-warning-light-7 {
+  syntax: "<color>";
+  initial-value: #f8e3c5;
+  inherits: false;
+}
+@property --px-color-warning-light-8 {
+  syntax: "<color>";
+  initial-value: #faecd8;
+  inherits: false;
+}
+@property --px-color-warning-light-9 {
+  syntax: "<color>";
+  initial-value: #fdf6ec;
+  inherits: false;
+}
+/* danger */
+@property --px-color-danger {
+  syntax: "<color>";
+  initial-value: #e76e55;
+  inherits: false;
+}
+@property --px-color-danger-dark-1 {
+  syntax: "<color>";
+  initial-value: #ce372b;
+  inherits: false;
+}
+@property --px-color-danger-dark-2 {
+  syntax: "<color>";
+  initial-value: #8c2022;
+  inherits: false;
+}
+@property --px-color-danger-light-3 {
+  syntax: "<color>";
+  initial-value: #f89898;
+  inherits: false;
+}
+@property --px-color-danger-light-5 {
+  syntax: "<color>";
+  initial-value: #fab6b6;
+  inherits: false;
+}
+@property --px-color-danger-light-7 {
+  syntax: "<color>";
+  initial-value: #fcd3d3;
+  inherits: false;
+}
+@property --px-color-danger-light-8 {
+  syntax: "<color>";
+  initial-value: #fde2e2;
+  inherits: false;
+}
+@property --px-color-danger-light-9 {
+  syntax: "<color>";
+  initial-value: #fef0f0;
+  inherits: false;
+}
+/* info */
+@property --px-color-info {
+  syntax: "<color>";
+  initial-value: #cccccc;
+  inherits: false;
+}
+@property --px-color-info-dark-1 {
+  syntax: "<color>";
+  initial-value: #e7e7e7;
+  inherits: false;
+}
+@property --px-color-info-dark-2 {
+  syntax: "<color>";
+  initial-value: #adafbc;
+  inherits: false;
+}
+@property --px-color-info-light-3 {
+  syntax: "<color>";
+  initial-value: #b1b3b8;
+  inherits: false;
+}
+@property --px-color-info-light-5 {
+  syntax: "<color>";
+  initial-value: #c8c9cc;
+  inherits: false;
+}
+@property --px-color-info-light-7 {
+  syntax: "<color>";
+  initial-value: #dedfe0;
+  inherits: false;
+}
+@property --px-color-info-light-8 {
+  syntax: "<color>";
+  initial-value: #e9e9eb;
+  inherits: false;
+}
+@property --px-color-info-light-9 {
+  syntax: "<color>";
+  initial-value: #f4f4f5;
+  inherits: false;
+}
+/* sakura */
+@property --px-color-sakura {
+  syntax: "<color>";
+  initial-value: #fadbe0;
+  inherits: false;
+}
+@property --px-color-sakura-dark-1 {
+  syntax: "<color>";
+  initial-value: #f7ced5;
+  inherits: false;
+}
+@property --px-color-sakura-dark-2 {
+  syntax: "<color>";
+  initial-value: #eaadbd;
+  inherits: false;
+}
+@property --px-color-sakura-light-3 {
+  syntax: "<color>";
+  initial-value: #fce6e9;
+  inherits: false;
+}
+@property --px-color-sakura-light-5 {
+  syntax: "<color>";
+  initial-value: #fdedf0;
+  inherits: false;
+}
+@property --px-color-sakura-light-7 {
+  syntax: "<color>";
+  initial-value: #fef4f6;
+  inherits: false;
+}
+@property --px-color-sakura-light-8 {
+  syntax: "<color>";
+  initial-value: #fef8f9;
+  inherits: false;
+}
+@property --px-color-sakura-light-9 {
+  syntax: "<color>";
+  initial-value: #fffbfc;
+  inherits: false;
+}
+/* text-color */
+@property --px-color-base {
+  syntax: "<color>";
+  initial-value: #212529;
+  inherits: false;
+}
+@property --px-color-white {
+  syntax: "<color>";
+  initial-value: #ffffff;
+  inherits: false;
+}
+@property --px-text-color-sakura {
+  syntax: "<color>";
+  initial-value: #554562;
+  inherits: false;
+}
+@property --px-text-color-primary {
+  syntax: "<color>";
+  initial-value: #212529;
+  inherits: false;
+}
+@property --px-text-color-regular {
+  syntax: "<color>";
+  initial-value: #606266;
+  inherits: false;
+}
+@property --px-text-color-secondary {
+  syntax: "<color>";
+  initial-value: #909399;
+  inherits: false;
+}
+@property --px-text-color-placeholder {
+  syntax: "<color>";
+  initial-value: #a8abb2;
+  inherits: false;
+}
+/* bg-color */
+@property --px-bg-color-page  {
+  syntax: "<color>";
+  initial-value: #f2f3f5;
+  inherits: false;
+}
+@property --px-bg-color-overlay  {
+  syntax: "<color>";
+  initial-value: #ffffff;
+  inherits: false;
+}
+@property --px-bg-color-page-dark  {
+  syntax: "<color>";
+  initial-value: #0a0a0a;
+  inherits: false;
+}
+@property --px-bg-color-dark  {
+  syntax: "<color>";
+  initial-value: #141414;
+  inherits: false;
+}
+@property --px-bg-color-overlay-dark  {
+  syntax: "<color>";
+  initial-value: #1d1e1f;
+  inherits: false;
+}
+/* border-color */
+@property --px-border-color-darker  {
+  syntax: "<color>";
+  initial-value: #636466;
+  inherits: false;
+}
+@property --px-border-color-dark  {
+  syntax: "<color>";
+  initial-value: #58585b;
+  inherits: false;
+}
+@property --px-border-color  {
+  syntax: "<color>";
+  initial-value: #4c4d4f;
+  inherits: false;
+}
+@property --px-border-color-light  {
+  syntax: "<color>";
+  initial-value: #414243;
+  inherits: false;
+}
+@property --px-border-color-lighter  {
+  syntax: "<color>";
+  initial-value: #363637;
+  inherits: false;
+}
+@property --px-border-color-extra-light  {
+  syntax: "<color>";
+  initial-value: #2b2b2c;
+  inherits: false;
+}
+/* disabled */
+@property --px-disabled-bg-color  {
+  syntax: "<color>";
+  initial-value: #f5f7fa;
+  inherits: false;
+}
+@property --px-disabled-text-color  {
+  syntax: "<color>";
+  initial-value: #a8abb2;
+  inherits: false;
+}

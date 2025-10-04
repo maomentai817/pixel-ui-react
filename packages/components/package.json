@@ -1,0 +1,16 @@
+{
+  "name": "@pixel-ui-react/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test pnpm --filter @pixel-ui-react/hooks build && vitest --run --coverage",
+    "test:watch": "cross-env NODE_ENV=test pnpm --filter @pixel-ui-react/hooks build && vitest --coverage",
+    "prettier": "prettier --write .",
+    "worklet": "tsc -p ./worklets/tsconfig.worklet.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1"
+}

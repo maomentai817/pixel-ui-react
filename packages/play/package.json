@@ -1,0 +1,16 @@
+{
+  "name": "@pixel-ui-react/play",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "globals": "^16.4.0"
+  }
+}

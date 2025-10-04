@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pixel-ui-react/theme": [
+        "./packages/theme"
+      ],
+      "@pixel-ui-react/utils": [
+        "./packages/utils"
+      ],
+      "@pixel-ui-react/locale": [
+        "./packages/locale"
+      ],
+      "@pixel-ui-react/worklets": [
+        "./packages/worklets"
+      ],
+      "@pixel-ui-react/hooks": [
+        "./packages/hooks"
+      ],
+      "@pixel-ui-react/components": [
+        "./packages/components"
+      ],
+      "@pixel-ui-react/core": [
+        "./packages/core"
+      ]
+    }
+  },
+  "include": [
+    "env.d.ts",
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
