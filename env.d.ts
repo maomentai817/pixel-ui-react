@@ -12,3 +12,6 @@ declare module '*.css' {
   const content: string
   export default content
 }
+
+// Testing Library Jest DOM 类型声明
+import '@testing-library/jest-dom'

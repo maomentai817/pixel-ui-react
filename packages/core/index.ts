@@ -16,4 +16,3 @@ printLogo()
 // export * from '@pixel-ui/locale'
 // export { en, zhCN, zhTW, ja } from '@pixel-ui/locale'
 export * from './components'
-export const a = 1;
