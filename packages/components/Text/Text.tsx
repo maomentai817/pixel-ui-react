@@ -14,7 +14,7 @@ const Text: React.FC<TextProps> = (props: TextProps): React.ReactElement => {
     compact = false,
     type = 'base',
     children,
-  } = props;
+  } = props
 
   const Tag = tag as keyof JSX.IntrinsicElements
 

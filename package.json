@@ -63,9 +63,10 @@
   "dependencies": {
     "@hackernoon/pixel-icon-library": "^1.0.5",
     "@mmt817/pixel-ui-react": "workspace:*",
+    "@pixel-ui-react/hooks": "workspace:*",
     "@pixel-ui-react/theme": "workspace:*",
-    "@pixel-ui-react/vite-plugins": "workspace:*",
     "@pixel-ui-react/utils": "workspace:*",
+    "@pixel-ui-react/vite-plugins": "workspace:*",
     "async-validator": "^4.2.5",
     "lodash-es": "^4.17.21",
     "react": "^19.1.1",

@@ -1,7 +1,10 @@
-import { PxText } from '@mmt817/pixel-ui-react'
+import { useRef } from 'react'
+import { PxText, PxButton, PxIcon, PxButtonGroup } from '@mmt817/pixel-ui-react'
 import './App.css'
 
 function App() {
+  const btnRef = useRef<HTMLButtonElement>(null)
+
   return (
     <div className="playground-container p-x-20 bgc-#ebe6e0">
       <div>一二三四---___"双引号"……'单引号'</div>
@@ -52,6 +55,91 @@ function App() {
       <PxText type="warning">Warning</PxText>
       <PxText type="danger">Danger</PxText>
       <PxText size={26} color="#626aef" align="left" bold>Text</PxText>
+      <hr />
+      <PxButton ref={btnRef} loading size="small" onClick={() => console.log(btnRef.current)}>Normal</PxButton>
+      <PxButton type="primary" size="small">Primary</PxButton>
+      <PxButton type="success" size="small">Success</PxButton>
+      <PxButton type="warning" size="small">Warning</PxButton>
+      <PxButton type="danger" size="small">Danger</PxButton>
+      <PxButton disabled size="small">Disabled</PxButton>
+      <hr />
+      <PxButton size="small">Normal</PxButton>
+      <PxButton type="primary" size="small">Primary</PxButton>
+      <PxButton type="success" size="small">Success</PxButton>
+      <PxButton type="warning" size="small">Warning</PxButton>
+      <PxButton type="danger" size="small">Danger</PxButton>
+      <PxButton disabled size="small">Disabled</PxButton>
+      <hr />
+      <PxButton>Normal</PxButton>
+      <PxButton type="primary">Primary</PxButton>
+      <PxButton type="success">Success</PxButton>
+      <PxButton type="warning">Warning</PxButton>
+      <PxButton type="danger">Danger</PxButton>
+      <PxButton disabled>Disabled</PxButton>
+      <hr />
+      <PxButton size="large">Normal</PxButton>
+      <PxButton type="primary" size="large">Primary</PxButton>
+      <PxButton type="success" size="large">Success</PxButton>
+      <PxButton type="warning" size="large">Warning</PxButton>
+      <PxButton type="danger" size="large">Danger</PxButton>
+      <PxButton disabled size="large">Disabled</PxButton>
+      <hr />
+      <PxButton round>Normal</PxButton>
+      <PxButton type="primary" round>Primary</PxButton>
+      <PxButton type="success" round>Success</PxButton>
+      <PxButton type="warning" round>Warning</PxButton>
+      <PxButton type="danger" round>Danger</PxButton>
+      <PxButton disabled round>Disabled</PxButton>
+      <hr />
+      <PxButton circle>Normal</PxButton>
+      <PxButton type="primary" circle>Primary</PxButton>
+      <PxButton type="success" circle>Success</PxButton>
+      <PxButton type="warning" circle>Warning</PxButton>
+      <PxButton type="danger" circle>Danger</PxButton>
+      <PxButton disabled circle>Disabled</PxButton>
+      <PxButton disabled circle>1</PxButton>
+      <hr />
+      <PxIcon icon="face-thinking-solid" />
+      <PxIcon icon="face-thinking-solid" size={30} />
+      <PxIcon icon="face-thinking-solid" color="red" />
+      <PxIcon icon="face-thinking-solid" type="primary" />
+      <PxIcon icon="face-thinking-solid" type="success" />
+      <PxIcon icon="face-thinking-solid" type="warning" />
+      <PxIcon icon="face-thinking-solid" type="danger" />
+      <PxIcon icon="face-thinking-solid" flip="horizontal" />
+      <PxIcon icon="face-thinking-solid" flip="vertical" />
+      <PxIcon icon="face-thinking-solid" flip="both" />
+      <PxIcon icon="face-thinking-solid" rotation={180} />
+      <PxIcon icon="face-thinking-solid" spin />
+      <PxIcon icon="face-thinking-solid" bounce />
+      <PxIcon icon="face-thinking-solid" shake />
+      <PxIcon icon="face-thinking-solid" beat />
+      <hr />
+      <PxButtonGroup type="primary" round>
+        <PxButton>Button1</PxButton>
+        <PxButton>Button2</PxButton>
+        <PxButton>Button3</PxButton>
+      </PxButtonGroup>
+      <PxButtonGroup type="success" circle>
+        <PxButton>Button1</PxButton>
+        <PxButton>Button3</PxButton>
+      </PxButtonGroup>
+      <PxButtonGroup type="warning">
+        <PxButton>Button1</PxButton>
+        <PxButton>Button2</PxButton>
+        <PxButton>Button3</PxButton>
+        <PxButton>Button4</PxButton>
+      </PxButtonGroup>
+      <hr />
+      <PxButton color="#626aef">Button</PxButton>
+      <PxButton color="#626aef" disabled>Button</PxButton>
+      <PxButton color="#626aef" plain>Button</PxButton>
+      <PxButton color="#dfee56">Button</PxButton>
+      <PxButton color="#dfee56" disabled>Button</PxButton>
+      <PxButton color="#dfee56" plain>Button</PxButton>
+      <PxButton color="#fadbe0">Button</PxButton>
+      <PxButton color="#fadbe0" disabled>Button</PxButton>
+      <PxButton color="#fadbe0" plain>Button</PxButton>
       <hr />
     </div>
   )

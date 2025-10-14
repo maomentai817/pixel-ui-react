@@ -1,6 +1,6 @@
-// components/index.ts
-
 export * from './Text'
+export * from './Button'
+export * from './Icon'
 
 // 注册所有 paintworklet
 import pixelboardWorkletURL from './worklets/dist/pixelboard.worklet.js?url'
