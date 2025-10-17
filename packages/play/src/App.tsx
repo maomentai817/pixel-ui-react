@@ -1,9 +1,10 @@
-import { useRef } from 'react'
-import { PxText, PxButton, PxIcon, PxButtonGroup } from '@mmt817/pixel-ui-react'
+import { useState, useRef } from 'react'
+import { PxText, PxButton, PxIcon, PxButtonGroup, PxOverlay } from '@mmt817/pixel-ui-react'
 import './App.css'
 
 function App() {
   const btnRef = useRef<HTMLButtonElement>(null)
+  const [overlayOpen, setOverlayOpen] = useState(false)
 
   return (
     <div className="playground-container p-x-20 bgc-#ebe6e0">
@@ -143,6 +144,20 @@ function App() {
       <PxButton color="#fadbe0" disabled>Button</PxButton>
       <PxButton color="#fadbe0" plain>Button</PxButton>
       <hr />
+      <PxOverlay
+        open={overlayOpen}
+        setOpen={setOverlayOpen}
+        // grid
+        // preset1
+        // matte
+        lockScroll={false}
+        backdropClose
+        color="rgba(255, 119, 7, 0.4)"
+        overlayClass={['f-c']}
+      >
+        <PxButton onClick={() => setOverlayOpen(false)}>Close</PxButton>
+      </PxOverlay>
+      <PxButton onClick={() => setOverlayOpen(!overlayOpen)}>overlay</PxButton>
     </div>
   )
 }

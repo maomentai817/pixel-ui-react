@@ -1,0 +1,30 @@
+.px-overlay {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  background-color: #00000080;
+  overflow: auto;
+  z-index: 2000;
+}
+
+.px-overlay.is-transparent {
+  background-color: transparent;
+}
+
+.is-grid-basic {
+  background: none;
+  background-color: transparent !important;
+  background-image: paint(pixelgridBasic);
+}
+
+.is-matte {
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), transparent);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+.is-grid-preset-1 {
+  background: none;
+  background-color: transparent !important;
+  background-image: paint(pixelgridPreset1);
+}
