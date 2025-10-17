@@ -148,4 +148,5 @@ export interface ButtonProps {
    * @description 自定义类名
    */
   className?: string
+  style?: React.CSSProperties
 }

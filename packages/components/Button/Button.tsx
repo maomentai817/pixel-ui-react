@@ -30,6 +30,7 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
     color,
     onClick,
     className,
+    style,
     children
   } = props
   const context = useContext(ButtonGroupContext) as ButtonGroupProps
@@ -92,13 +93,14 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
         autoFocus={autoFocus}
         type={nativeType}
         disabled={disabledValue || loading}
-        style={colorStyle}
+        style={{ ...colorStyle, ...(style || {}) }}
+        role="button"
         onClick={(e) =>
           useThrottle ? handleBtnClickThrottle(e) : handleBtnClick(e)}
       >
         {loading ? (
           <PxIcon
-            className={'loading-icon '}
+            className="loading-icon"
             spin
             icon={loadingIcon}
             style={iconStyle}
@@ -124,7 +126,9 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
   return (
     <Tag
       className={classNames}
-      style={colorStyle}
+      style={{ ...colorStyle, ...(style || {}) }}
+      role="button"
+      disabled={disabledValue || loading}
       onClick={(e) =>
         useThrottle ? handleBtnClickThrottle(e as React.MouseEvent<HTMLButtonElement>) : handleBtnClick(e as React.MouseEvent<HTMLButtonElement>)}
     >

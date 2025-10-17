@@ -16,13 +16,15 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
     shake,
     beat,
     className,
+    style,
   } = props
 
   const customStyle = useMemo(() => ({
     '--px-icon-color': color ?? void 0,
     fontSize: `${size}px`,
-    rotate: rotation ? `${rotation}deg` : void 0
-  }), [color, size, rotation])
+    rotate: rotation ? `${rotation}deg` : void 0,
+    ...(style || {})
+  }), [color, size, rotation, style])
 
   const classNames = [
     className,
@@ -41,6 +43,7 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
     <i
       className={classNames}
       style={customStyle}
+      role="img"
     >
     </i>
   )

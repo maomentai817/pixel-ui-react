@@ -30,7 +30,7 @@ const ButtonGroup: React.FC<ButtonGroupProps> = (props: ButtonGroupProps): React
 
   return (
     <ButtonGroupContext.Provider value={contextValue}>
-      <div className={classNames}>
+      <div className={classNames} role="button-group">
         {children}
       </div>
     </ButtonGroupContext.Provider>

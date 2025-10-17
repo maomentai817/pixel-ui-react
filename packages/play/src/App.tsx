@@ -57,11 +57,11 @@ function App() {
       <PxText size={26} color="#626aef" align="left" bold>Text</PxText>
       <hr />
       <PxButton ref={btnRef} loading size="small" onClick={() => console.log(btnRef.current)}>Normal</PxButton>
-      <PxButton type="primary" size="small">Primary</PxButton>
-      <PxButton type="success" size="small">Success</PxButton>
-      <PxButton type="warning" size="small">Warning</PxButton>
-      <PxButton type="danger" size="small">Danger</PxButton>
-      <PxButton disabled size="small">Disabled</PxButton>
+      <PxButton type="primary" loading size="small">Primary</PxButton>
+      <PxButton type="success" loading size="small">Success</PxButton>
+      <PxButton type="warning" loading size="small">Warning</PxButton>
+      <PxButton type="danger" loading size="small">Danger</PxButton>
+      <PxButton disabled loading size="small">Disabled</PxButton>
       <hr />
       <PxButton size="small">Normal</PxButton>
       <PxButton type="primary" size="small">Primary</PxButton>
@@ -97,7 +97,9 @@ function App() {
       <PxButton type="warning" circle>Warning</PxButton>
       <PxButton type="danger" circle>Danger</PxButton>
       <PxButton disabled circle>Disabled</PxButton>
-      <PxButton disabled circle>1</PxButton>
+      <PxButton disabled circle icon='face-thinking-solid'></PxButton>
+      <hr />
+      <PxButton icon="upload-alt-solid" tag="span" onClick={() => console.log('span button clicked')}>Span Button</PxButton>
       <hr />
       <PxIcon icon="face-thinking-solid" />
       <PxIcon icon="face-thinking-solid" size={30} />
@@ -115,12 +117,12 @@ function App() {
       <PxIcon icon="face-thinking-solid" shake />
       <PxIcon icon="face-thinking-solid" beat />
       <hr />
-      <PxButtonGroup type="primary" round>
+      <PxButtonGroup type="primary" round size="small">
         <PxButton>Button1</PxButton>
         <PxButton>Button2</PxButton>
         <PxButton>Button3</PxButton>
       </PxButtonGroup>
-      <PxButtonGroup type="success" circle>
+      <PxButtonGroup type="success" circle size="large">
         <PxButton>Button1</PxButton>
         <PxButton>Button3</PxButton>
       </PxButtonGroup>
