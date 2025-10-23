@@ -81,4 +81,5 @@ export interface IconProps {
   beat?: boolean
   style?: React.CSSProperties
   className?: string
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void
 }

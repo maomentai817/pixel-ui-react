@@ -1,7 +1,11 @@
+/* 基础组件 */
 export * from './Text'
 export * from './Button'
 export * from './Icon'
 export * from './Overlay'
+
+/* 表单组件 */
+export * from './Input'
 
 // 注册所有 paintworklet
 import pixelboardWorkletURL from './worklets/dist/pixelboard.worklet.js?url'

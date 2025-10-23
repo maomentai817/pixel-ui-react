@@ -82,7 +82,7 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
       disabled: disabledValue,
       size: sizeValue,
       type: typeValue
-    } as any
+    } as unknown as HTMLButtonElement
   })
 
   if (tag === 'button') {

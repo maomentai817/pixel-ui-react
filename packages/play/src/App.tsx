@@ -1,10 +1,18 @@
 import { useState, useRef } from 'react'
-import { PxText, PxButton, PxIcon, PxButtonGroup, PxOverlay } from '@mmt817/pixel-ui-react'
+import {
+  PxText,
+  PxButton,
+  PxIcon,
+  PxButtonGroup,
+  PxOverlay,
+  PxInput
+} from '@mmt817/pixel-ui-react'
 import './App.css'
 
 function App() {
   const btnRef = useRef<HTMLButtonElement>(null)
   const [overlayOpen, setOverlayOpen] = useState(false)
+  const [input, setInput] = useState<string>('')
 
   return (
     <div className="playground-container p-x-20 bgc-#ebe6e0">
@@ -143,6 +151,54 @@ function App() {
       <PxButton color="#fadbe0">Button</PxButton>
       <PxButton color="#fadbe0" disabled>Button</PxButton>
       <PxButton color="#fadbe0" plain>Button</PxButton>
+      <hr />
+      <div className="mb-20">
+        <PxInput
+          value={input}
+          style={{ width: '240px' }}
+          placeholder="Please input"
+        />
+      </div>
+      <div className="mb-20">
+        <PxInput
+          value={input}
+          style={{ width: '240px' }}
+          disabled
+          placeholder="Please input"
+        />
+      </div>
+      <div className="mb-20">
+        <PxInput
+          value={input}
+          style={{ width: '240px' }}
+          clearable
+          placeholder="Please input"
+        />
+      </div>
+      <div className="mb-20">
+        <PxInput value={input} type="password" placeholder="Please input password" showPassword />
+      </div>
+      <div className="mb-20">
+        <PxInput size="large" value={input} style={{ width: '240px' }} placeholder="Pick a date" prepend={<PxIcon style={{ fontSize: '32px' }} icon="bluesky" />} />
+      </div>
+      <div className="mb-20">
+        <PxInput
+          value={input}
+          style={{ width: '240px' }}
+          placeholder="Type something"
+          prefix={<PxIcon icon="unsplash" />}
+        />
+      </div>
+      <div className="mb-20">
+        <PxInput
+          value={input}
+          style={{ width: '240px' }}
+          rows={3}
+          type="textarea"
+          placeholder="Please input"
+          onChange={(value: string) => setInput(value)}
+        />
+      </div>
       <hr />
       <PxOverlay
         open={overlayOpen}

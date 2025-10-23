@@ -17,6 +17,7 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
     beat,
     className,
     style,
+    onClick,
   } = props
 
   const customStyle = useMemo(() => ({
@@ -44,6 +45,7 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
       className={classNames}
       style={customStyle}
       role="img"
+      onClick={onClick ? (event) => onClick(event) : undefined}
     >
     </i>
   )
