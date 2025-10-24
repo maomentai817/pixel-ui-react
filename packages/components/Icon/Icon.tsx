@@ -18,6 +18,7 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
     className,
     style,
     onClick,
+    onMouseDown,
   } = props
 
   const customStyle = useMemo(() => ({
@@ -45,7 +46,8 @@ const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
       className={classNames}
       style={customStyle}
       role="img"
-      onClick={onClick ? (event) => onClick(event) : undefined}
+      onClick={onClick ? (event) => onClick(event) : void 0}
+      onMouseDown={onMouseDown ? (event) => onMouseDown(event) : void 0}
     >
     </i>
   )

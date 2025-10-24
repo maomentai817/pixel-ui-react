@@ -173,6 +173,7 @@ function App() {
           style={{ width: '240px' }}
           clearable
           placeholder="Please input"
+          onChange={(value: string) => setInput(value)}
         />
       </div>
       <div className="mb-20">

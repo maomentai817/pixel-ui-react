@@ -73,18 +73,18 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
   // 清除按钮显示
   const showClear = useMemo(() => (
     clearable &&
-    !!value &&
+    !!innerValue &&
     !disabled &&
     isFocused
-  ), [clearable, value, disabled, isFocused])
+  ), [clearable, innerValue, disabled, isFocused])
 
   // 显示密码
   const showPwdArea = useMemo(() => (
     type === 'password' &&
     showPassword &&
     !disabled &&
-    !!value
-  ), [type, showPassword, disabled, value])
+    !!innerValue
+  ), [type, showPassword, disabled, innerValue])
 
   const classNames = [
     className,
@@ -98,13 +98,6 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
     suffix ? styles['is-suffix'] : '',
     suffix ? styles['is-focus'] : '',
   ].filter(Boolean).join(' ')
-
-  const clear = useCallback((e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault()
-    e.stopPropagation()
-    setInnerValue('')
-    onChange?.('')
-  }, [value])
 
   // pwd 可见切换
   const togglePwdVisible = useCallback(() => {
@@ -120,6 +113,15 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
   const select = useCallback(() => {
     _ref.current?.select()
   }, [_ref])
+
+  const clear = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setInnerValue('')
+    onChange?.('')
+    // 继续聚焦
+    // focus()
+  }, [focus])
 
   useImperativeHandle(ref, (): HTMLInputElement => {
     return {
@@ -179,6 +181,7 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
                     icon="times-circle"
                     className={styles['px-input__clear']}
                     onClick={clear}
+                    onMouseDown={e => e.preventDefault()}
                   />
                 )}
                 {showPwdArea && pwdVisible && (
@@ -190,7 +193,7 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
                 )}
                 {showPwdArea && !pwdVisible && (
                   <PxIcon
-                    icon="eye"
+                    icon="eye-cross"
                     className={styles['px-input__password']}
                     onClick={togglePwdVisible}
                   />

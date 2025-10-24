@@ -82,4 +82,5 @@ export interface IconProps {
   style?: React.CSSProperties
   className?: string
   onClick?: (event: React.MouseEvent<HTMLElement>) => void
+  onMouseDown?: (event: React.MouseEvent<HTMLElement>) => void
 }
