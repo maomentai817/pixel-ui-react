@@ -17,12 +17,12 @@ export type ButtonSize = (typeof buttonSizes)[number]
 
 export interface ButtonProps {
   /**
-   * @property ref
-   * @type React.Ref<HTMLButtonElement>
-   * @description 按钮引用
-   * @default null
+   * @property id
+   * @type string
+   * @description 按钮唯一标识
+   * @default -
    */
-  ref?: React.Ref<HTMLButtonElement>
+  id?: string
   /**
    * @property size
    * @type enum - large | default | small
@@ -149,4 +149,10 @@ export interface ButtonProps {
    */
   className?: string
   style?: React.CSSProperties
+}
+
+export interface ButtonExpose {
+  disabled: boolean
+  size: ButtonSize
+  type: ButtonType
 }

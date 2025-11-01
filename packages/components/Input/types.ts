@@ -143,3 +143,10 @@ export interface InputProps {
   className?: string
   style?: React.CSSProperties
 }
+
+export interface InputExpose {
+  focus: () => void
+  blur: () => void
+  select: () => void
+  clear: (event: React.MouseEvent<HTMLElement>) => void
+}

@@ -2,10 +2,10 @@ import { useState, forwardRef, useMemo, useCallback, useImperativeHandle, memo, 
 import { useFocusController, useId } from '@pixel-ui-react/hooks'
 
 import { PxIcon } from '../Icon'
-import type { InputProps } from './types'
+import type { InputExpose, InputProps } from './types'
 import styles from './style.module.css'
 
-const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((props: InputProps, ref: React.Ref<HTMLInputElement>): React.ReactElement => {
+const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React.Ref<InputExpose>): React.ReactElement => {
   const {
     id,
     value,
@@ -45,7 +45,7 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
   const _ref = useMemo(() => inputRef || textareaRef, [inputRef.current, textareaRef.current])
   // focusController 获取状态
   const { wrapperRef, isFocused, handleFocus, handleBlur } = useFocusController(
-    _ref as React.RefObject<HTMLElement>,
+    _ref as React.RefObject<HTMLInputElement | HTMLTextAreaElement>,
     {
       onFocus,
       onBlur,
@@ -123,14 +123,13 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((pr
     // focus()
   }, [focus])
 
-  useImperativeHandle(ref, (): HTMLInputElement => {
-    return {
-      focus,
-      blur,
-      select,
-      clear,
-    } as unknown as HTMLInputElement
-  })
+  useImperativeHandle<InputExpose, InputExpose>(ref, () => ({
+    // _ref,
+    focus,
+    blur,
+    select,
+    clear,
+  }), [])
 
   useEffect(() => {
     setInnerValue(value)

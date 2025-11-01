@@ -6,12 +6,13 @@ import { usePxButtonCustomStyle } from '@pixel-ui-react/hooks'
 import { PxIcon } from '../Icon'
 
 import { ButtonGroupContext } from './context'
-import type { ButtonProps } from './types.button'
+import type { ButtonExpose, ButtonProps } from './types.button'
 import type { ButtonGroupProps } from './types.buttonGroup'
 import styles from './style.module.css'
 
-const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>((props: ButtonProps, ref: React.Ref<HTMLButtonElement>): React.ReactElement => {
+const Button = forwardRef<ButtonExpose, ButtonProps>((props: ButtonProps, ref: React.Ref<ButtonExpose>): React.ReactElement => {
   const {
+    id,
     size,
     type = 'base',
     plain,
@@ -77,18 +78,17 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
     [handleBtnClick, throttleDuration]
   )
 
-  useImperativeHandle(ref, (): HTMLButtonElement => {
-    return {
-      disabled: disabledValue,
-      size: sizeValue,
-      type: typeValue
-    } as unknown as HTMLButtonElement
-  })
+  useImperativeHandle<ButtonExpose, ButtonExpose>(ref, () => ({
+    disabled: disabledValue,
+    size: sizeValue,
+    type: typeValue
+  }), [])
 
   if (tag === 'button') {
     return (
       <button
-        ref={ref}
+        id={id}
+        ref={ref as unknown as React.Ref<HTMLButtonElement>}
         className={classNames}
         autoFocus={autoFocus}
         type={nativeType}
@@ -125,6 +125,7 @@ const Button: React.FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>
 
   return (
     <Tag
+      id={id}
       className={classNames}
       style={{ ...colorStyle, ...(style || {}) }}
       role="button"

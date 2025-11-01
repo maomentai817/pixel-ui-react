@@ -53,9 +53,11 @@
   "dependencies": {
     "@hackernoon/pixel-icon-library": "^1.0.5",
     "@popperjs/core": "^2.11.8",
+    "react-transition-group": "^4.4.5",
     "async-validator": "^4.2.5"
   },
   "devDependencies": {
+    "@types/react-transition-group": "^4.4.12",
     "@pixel-ui-react/components": "workspace:*",
     "@rollup/plugin-terser": "^0.4.4",
     "terser": "^5.39.0",

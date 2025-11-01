@@ -7,6 +7,12 @@ export * from './Overlay'
 /* 表单组件 */
 export * from './Input'
 
+/* Feedback 反馈组件 */
+export * from './Tooltip'
+
+/* 全局配置 */
+// export * from './ConfigProvider'
+
 // 注册所有 paintworklet
 import pixelboardWorkletURL from './worklets/dist/pixelboard.worklet.js?url'
 import pixelboxWorkletURL from './worklets/dist/pixelbox.worklet.js?url'

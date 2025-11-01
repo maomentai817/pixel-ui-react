@@ -5,14 +5,19 @@ import {
   PxIcon,
   PxButtonGroup,
   PxOverlay,
-  PxInput
+  PxInput,
+  PxTooltip,
+  type ButtonExpose
 } from '@mmt817/pixel-ui-react'
+
 import './App.css'
 
 function App() {
-  const btnRef = useRef<HTMLButtonElement>(null)
+  const btnRef = useRef<ButtonExpose>(null)
+  const tooltipTestRef = useRef<HTMLDivElement>(null)
   const [overlayOpen, setOverlayOpen] = useState(false)
   const [input, setInput] = useState<string>('')
+  const [tooltipVisible, setTooltipVisible] = useState(false)
 
   return (
     <div className="playground-container p-x-20 bgc-#ebe6e0">
@@ -65,12 +70,12 @@ function App() {
       <PxText type="danger">Danger</PxText>
       <PxText size={26} color="#626aef" align="left" bold>Text</PxText>
       <hr />
-      <PxButton ref={btnRef} loading size="small" onClick={() => console.log(btnRef.current)}>Normal</PxButton>
-      <PxButton type="primary" loading size="small">Primary</PxButton>
-      <PxButton type="success" loading size="small">Success</PxButton>
-      <PxButton type="warning" loading size="small">Warning</PxButton>
-      <PxButton type="danger" loading size="small">Danger</PxButton>
-      <PxButton disabled loading size="small">Disabled</PxButton>
+      <PxButton ref={btnRef} size="small" onClick={() => console.log(btnRef.current)}>Normal</PxButton>
+      <PxButton type="primary" size="small">Primary</PxButton>
+      <PxButton type="success" size="small">Success</PxButton>
+      <PxButton type="warning" size="small">Warning</PxButton>
+      <PxButton type="danger" size="small">Danger</PxButton>
+      <PxButton disabled size="small">Disabled</PxButton>
       <hr />
       <PxButton size="small">Normal</PxButton>
       <PxButton type="primary" size="small">Primary</PxButton>
@@ -79,12 +84,12 @@ function App() {
       <PxButton type="danger" size="small">Danger</PxButton>
       <PxButton disabled size="small">Disabled</PxButton>
       <hr />
-      <PxButton>Normal</PxButton>
-      <PxButton type="primary">Primary</PxButton>
-      <PxButton type="success">Success</PxButton>
-      <PxButton type="warning">Warning</PxButton>
-      <PxButton type="danger">Danger</PxButton>
-      <PxButton disabled>Disabled</PxButton>
+      <PxButton plain>Normal</PxButton>
+      <PxButton type="primary" plain>Primary</PxButton>
+      <PxButton type="success" plain>Success</PxButton>
+      <PxButton type="warning" plain>Warning</PxButton>
+      <PxButton type="danger" plain>Danger</PxButton>
+      <PxButton disabled plain>Disabled</PxButton>
       <hr />
       <PxButton size="large">Normal</PxButton>
       <PxButton type="primary" size="large">Primary</PxButton>
@@ -152,6 +157,97 @@ function App() {
       <PxButton color="#fadbe0" disabled>Button</PxButton>
       <PxButton color="#fadbe0" plain>Button</PxButton>
       <hr />
+      <div className="tooltip-base-box w-1000">
+        <div className="flex items-center justify-center">
+          <PxTooltip content="Top Left prompts info" placement="top-start">
+            <PxButton>top-start</PxButton>
+          </PxTooltip>
+          <PxTooltip content="Top Center prompts info" placement="top">
+            <PxButton>top</PxButton>
+          </PxTooltip>
+          <PxTooltip
+            content="Top Right prompts info"
+            placement="top-end"
+          >
+            <PxButton>top-end</PxButton>
+          </PxTooltip>
+        </div>
+        <div className="f-b">
+          <PxTooltip content="Left Top prompts info" placement="left-start">
+            <PxButton>left-start</PxButton>
+          </PxTooltip>
+          <PxTooltip content="Right Top prompts info" placement="right-start">
+            <PxButton>right-start</PxButton>
+          </PxTooltip>
+        </div>
+        <div className="f-b">
+          <PxTooltip content="Left Center prompts info" placement="left">
+            <PxButton className="mt-3 mb-3">left</PxButton>
+          </PxTooltip>
+          <PxTooltip content="Right Center prompts info" placement="right">
+            <PxButton>right</PxButton>
+          </PxTooltip>
+        </div>
+        <div className="f-b">
+          <PxTooltip
+            content="Left Bottom prompts info"
+            placement="left-end"
+          >
+            <PxButton>left-end</PxButton>
+          </PxTooltip>
+          <PxTooltip
+            content="Right Bottom prompts info"
+            placement="right-end"
+          >
+            <PxButton>right-end</PxButton>
+          </PxTooltip>
+        </div>
+        <div className="flex items-center justify-center">
+          <PxTooltip
+            content="Bottom Left prompts info"
+            placement="bottom-start"
+          >
+            <PxButton>bottom-start</PxButton>
+          </PxTooltip>
+          <PxTooltip content="Bottom Center prompts info" placement="bottom">
+            <PxButton>bottom</PxButton>
+          </PxTooltip>
+          <PxTooltip content="Bottom Right prompts info" placement="bottom-end" effect="dark">
+            <PxButton>bottom-end</PxButton>
+          </PxTooltip>
+        </div>
+      </div>
+      <hr />
+      <div className="w-600 mt-20">
+        <PxButton onClick={() => setTooltipVisible(!tooltipVisible)}>toggle</PxButton>
+        <PxTooltip content="controlled visible prompts info" placement="right" visible={tooltipVisible}>
+          <PxButton>controlled visible</PxButton>
+        </PxTooltip>
+      </div>
+      <div className="w-600 mt-20">
+        <PxTooltip content="click prompts info" trigger="click">
+          <PxButton>click visible</PxButton>
+        </PxTooltip>
+        <PxTooltip content="contextmenu prompts info" trigger="contextmenu">
+          <PxButton>contextmenu visible</PxButton>
+        </PxTooltip>
+      </div>
+
+      {/* tooltip virtual trigger */}
+      <div className="w-600 mt-20">
+        <PxTooltip
+          content="Bottom center"
+          placement="bottom"
+          trigger="hover"
+          virtualTriggering
+          virtualRef={tooltipTestRef}
+        >
+        </PxTooltip>
+        <div ref={tooltipTestRef} className="inline-block">
+          <PxButton>virtual trigger</PxButton>
+        </div>
+      </div>
+      <hr />
       <div className="mb-20">
         <PxInput
           value={input}
@@ -207,7 +303,7 @@ function App() {
         // grid
         // preset1
         // matte
-        lockScroll={false}
+        lockScroll
         backdropClose
         color="rgba(255, 119, 7, 0.4)"
         overlayClass={['f-c']}

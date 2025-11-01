@@ -13,6 +13,5 @@ printLogo()
 // 注册组件之前执行 Paint Worklet 注册
 registerPaintWorklets()
 
-// export * from '@pixel-ui/locale'
-// export { en, zhCN, zhTW, ja } from '@pixel-ui/locale'
+// export * from '@pixel-ui-react/locale'
 export * from '@pixel-ui-react/components'

@@ -35,6 +35,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/shelljs": "^0.8.15",
+    "@types/react-transition-group": "^4.4.12",
     "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@typescript-eslint/parser": "^8.29.0",
     "@unocss/eslint-config": "^66.1.2",
@@ -43,6 +44,7 @@
     "@unocss/reset": "66.1.0-beta.6",
     "@vitejs/plugin-react-swc": "^4.1.0",
     "@vitest/coverage-v8": "^1.6.0",
+    "react-transition-group": "^4.4.5",
     "clipboard-copy": "^4.0.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.1",
@@ -58,12 +60,14 @@
     "unocss": "66.1.0-beta.6",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.9.1",
-    "vitest": "^1.4.0"
+    "vitest": "^1.4.0",
+    "react-intl": "^7.1.11"
   },
   "dependencies": {
     "@hackernoon/pixel-icon-library": "^1.0.5",
     "@mmt817/pixel-ui-react": "workspace:*",
     "@pixel-ui-react/hooks": "workspace:*",
+    "@pixel-ui-react/locale": "workspace:*",
     "@pixel-ui-react/theme": "workspace:*",
     "@pixel-ui-react/utils": "workspace:*",
     "@pixel-ui-react/vite-plugins": "workspace:*",
@@ -75,6 +79,8 @@
   "peerDependencies": {
     "@types/node": "^24.6.2",
     "vite": "^5.1.4",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }

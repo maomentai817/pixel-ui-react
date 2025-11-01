@@ -230,6 +230,10 @@
   --px-border-color: var(--px-color-base);
 }
 
+.px-button.is-plain.is-disabled {
+  --px-button-text-color: var(--px-text-color-secondary);
+}
+
 .px-button--primary.is-plain {
   --px-button-text-color: var(--px-color-primary);
   --px-button-bg-shadow-color: var(--px-color-primary);
@@ -386,7 +390,7 @@
   clear: both;
 }
 
-.px-button-group> :deep(.px-button) {
+.px-button-group>.px-button {
   float: left;
   position: relative;
   --px-button-single: 0;

@@ -56,11 +56,3 @@ export interface ButtonGroupContext {
   circle?: boolean
   color?: string
 }
-
-export interface ButtonGroupSlots {
-  /**
-   * @property default
-   * @description 默认插槽 `SubComponent: PxButton`
-   */
-  default: () => string
-}
