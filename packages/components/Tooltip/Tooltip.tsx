@@ -214,11 +214,13 @@ const Tooltip: React.FC<TooltipProps> = (props: TooltipProps): React.ReactElemen
     <div
       className={styles['px-tooltip']}
       ref={containerNode}
+      data-testid="px-tooltip"
     >
       {!virtualTriggering && (
         <div
           className={styles['px-tooltip__trigger']}
           ref={triggerNode}
+          data-testid="px-tooltip__trigger"
           {...triggerEvents}
         >
           {children}
@@ -236,6 +238,7 @@ const Tooltip: React.FC<TooltipProps> = (props: TooltipProps): React.ReactElemen
         <div
           className={popperClassName}
           ref={popperNode}
+          data-testid="px-tooltip__popper"
           {...popperEvents}
         >
           {content}
