@@ -7,6 +7,7 @@ import {
   PxOverlay,
   PxInput,
   PxTooltip,
+  PxPopconfirm,
   type ButtonExpose
 } from '@mmt817/pixel-ui-react'
 
@@ -131,12 +132,12 @@ function App() {
       <PxIcon icon="face-thinking-solid" shake />
       <PxIcon icon="face-thinking-solid" beat />
       <hr />
-      <PxButtonGroup type="primary" round size="small">
+      <PxButtonGroup type="primary" size="small">
         <PxButton>Button1</PxButton>
         <PxButton>Button2</PxButton>
         <PxButton>Button3</PxButton>
       </PxButtonGroup>
-      <PxButtonGroup type="success" circle size="large">
+      <PxButtonGroup type="success" size="large">
         <PxButton>Button1</PxButton>
         <PxButton>Button3</PxButton>
       </PxButtonGroup>
@@ -247,6 +248,10 @@ function App() {
           <PxButton>virtual trigger</PxButton>
         </div>
       </div>
+      <hr />
+      <PxPopconfirm title="Are you sure to delete this?">
+        <PxButton>Delete</PxButton>
+      </PxPopconfirm>
       <hr />
       <div className="mb-20">
         <PxInput

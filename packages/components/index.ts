@@ -9,6 +9,7 @@ export * from './Input'
 
 /* Feedback 反馈组件 */
 export * from './Tooltip'
+export * from './Popconfirm'
 
 /* 全局配置 */
 // export * from './ConfigProvider'

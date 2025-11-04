@@ -9,11 +9,11 @@ export type EffectType = (typeof effectTypes)[number]
 export interface TooltipProps {
   /**
    * @property content
-   * @type string
-   * @description 提示内容, 可被`slot#content`覆盖
+   * @type React.ReactNode
+   * @description 提示内容
    * @default -
    */
-  content?: string
+  content?: React.ReactNode
   /**
    * @property trigger
    * @type enum - hover | click | contextmenu
