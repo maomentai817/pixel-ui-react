@@ -12,7 +12,7 @@ export * from './Tooltip'
 export * from './Popconfirm'
 
 /* 全局配置 */
-// export * from './ConfigProvider'
+export * from './ConfigProvider'
 
 // 注册所有 paintworklet
 import pixelboardWorkletURL from './worklets/dist/pixelboard.worklet.js?url'

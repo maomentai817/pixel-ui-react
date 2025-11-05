@@ -1,5 +1,6 @@
 import { memo, useCallback, useMemo, useState, useRef, useEffect } from 'react'
 import { addUnit } from '@pixel-ui-react/utils'
+import { useI18n } from '../ConfigProvider/hooks'
 
 import { PxTooltip } from '../Tooltip'
 import { PxButton } from '../Button'
@@ -32,6 +33,8 @@ const Popconfirm: React.FC<PopconfirmProps> = (props: PopconfirmProps): React.Re
   } = props
 
   const [innerVisible, setInnerVisible] = useState(false)
+  const t = useI18n()
+
   const style = useMemo(() => ({ width: addUnit(props.width) }), [width])
   const virtualTriggerRef = useRef<HTMLDivElement>(null)
 
@@ -77,7 +80,7 @@ const Popconfirm: React.FC<PopconfirmProps> = (props: PopconfirmProps): React.Re
                 type={cancelButtonType}
                 onClick={handleCancel}
               >
-                {cancelButtonText || 'No'}
+                {cancelButtonText || t('popconfirm.cancelButtonText')}
               </PxButton>
               <PxButton
                 id="px-popconfirm__confirm"
@@ -86,7 +89,7 @@ const Popconfirm: React.FC<PopconfirmProps> = (props: PopconfirmProps): React.Re
                 type={confirmButtonType}
                 onClick={handleConfirm}
               >
-                {confirmButtonText || 'Yes'}
+                {confirmButtonText || t('popconfirm.confirmButtonText')}
               </PxButton>
             </>
           )}
@@ -94,6 +97,7 @@ const Popconfirm: React.FC<PopconfirmProps> = (props: PopconfirmProps): React.Re
       </div>
     )
   }, [
+    t,
     content,
     style,
     icon,

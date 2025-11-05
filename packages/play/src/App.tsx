@@ -8,7 +8,9 @@ import {
   PxInput,
   PxTooltip,
   PxPopconfirm,
-  type ButtonExpose
+  PxConfigProvider,
+  type ButtonExpose,
+  type Locale
 } from '@mmt817/pixel-ui-react'
 
 import './App.css'
@@ -19,6 +21,7 @@ function App() {
   const [overlayOpen, setOverlayOpen] = useState(false)
   const [input, setInput] = useState<string>('')
   const [tooltipVisible, setTooltipVisible] = useState(false)
+  const [locale, setLocale] = useState<Locale>('en')
 
   return (
     <div className="playground-container p-x-20 bgc-#ebe6e0">
@@ -252,6 +255,14 @@ function App() {
       <PxPopconfirm title="Are you sure to delete this?">
         <PxButton>Delete</PxButton>
       </PxPopconfirm>
+      <hr />
+      <PxButton onClick={() => setLocale('zh-CN')}>中文</PxButton>
+      <PxButton onClick={() => setLocale('en')}>English</PxButton>
+      <PxConfigProvider locale={locale}>
+        <PxPopconfirm title="Are you sure to delete this?">
+          <PxButton>Current Locale: {locale}</PxButton>
+        </PxPopconfirm>
+      </PxConfigProvider>
       <hr />
       <div className="mb-20">
         <PxInput

@@ -3,6 +3,7 @@ import useEventListener from './useEventListener'
 import useId from './useId'
 import useFocusController from './useFocusController'
 import useClickOutside from './useClickOutside'
+import useLocale from './useLocale'
 
 export {
   usePxButtonCustomStyle,
@@ -10,4 +11,5 @@ export {
   useId,
   useFocusController,
   useClickOutside,
+  useLocale,
 }
