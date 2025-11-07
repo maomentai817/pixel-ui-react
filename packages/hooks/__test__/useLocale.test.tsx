@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { IntlProvider } from 'react-intl'
 import { useLocale } from '../useLocale'
@@ -59,8 +59,14 @@ describe('useLocale', () => {
       return <div data-testid="test">{t('non.existent.key')}</div>
     }
 
+    const onError = vi.fn() // 或者使用 console.error 来捕获但不抛出
+
     render(
-      <IntlProvider locale="en" messages={en as unknown as Record<string, string>}>
+      <IntlProvider
+        locale="en"
+        messages={en as unknown as Record<string, string>}
+        onError={onError}
+      >
         <TestComponent />
       </IntlProvider>
     )
@@ -68,6 +74,8 @@ describe('useLocale', () => {
     const element = screen.getByTestId('test')
     // react-intl 在找不到翻译时会返回 key
     expect(element.textContent).toBe('non.existent.key')
+    // 验证确实触发了错误处理
+    expect(onError).toHaveBeenCalled()
   })
 
   it('should work with custom messages', () => {

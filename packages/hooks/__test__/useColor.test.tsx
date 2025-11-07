@@ -1,16 +1,21 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { render } from '@testing-library/react'
 import { usePxButtonCustomStyle } from '../useColor'
-import type { ButtonProps } from '@mmt817/pixel-ui-react'
+
+interface UseColorButtonProps {
+  color?: string
+  plain?: boolean
+  disabled?: boolean
+}
 
 describe('usePxButtonCustomStyle', () => {
-  const defaultProps: ButtonProps = {
+  const defaultProps: UseColorButtonProps = {
     color: '#209cee',
     plain: false,
     disabled: false
   }
 
-  const getResult = (props: ButtonProps, overrideColor?: string) => {
+  const getResult = (props: UseColorButtonProps, overrideColor?: string) => {
     let result: Record<string, string> = {}
 
     const TestComponent = () => {

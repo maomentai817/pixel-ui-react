@@ -1,6 +1,12 @@
 import { useMemo } from 'react'
 import { TinyColor } from '@ctrl/tinycolor'
-import type { ButtonProps } from '@mmt817/pixel-ui-react'
+
+// 只定义需要的属性
+interface UseColorButtonProps {
+  color?: string
+  plain?: boolean
+  disabled?: boolean
+}
 
 function cssVar(name: string) {
   return `--px-${name}`
@@ -8,7 +14,7 @@ function cssVar(name: string) {
 
 // 新增参数 `overrideColor`，可选
 export function usePxButtonCustomStyle(
-  props: ButtonProps,
+  props: UseColorButtonProps,
   overrideColor?: string
 ) {
   return useMemo(() => {

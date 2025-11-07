@@ -57,11 +57,18 @@ jobs:
       - name: Build docs
         run: npm run docs:build
 
+      - name: Clean invalid file paths
+        run: |
+          find ./packages/docs/dist -name "*:*" -type f -delete
+          find ./packages/docs/dist -name "*:*" -type d -exec rm -rf {} + 2>/dev/null || true
+
       - name: Upload docs
         uses: actions/upload-artifact@v4
         with:
           name: docs
           path: ./packages/docs/dist
+          exclude-paths: |
+            **/~demos/:id/**
 
   deploy:
     name: Deploy to GitHub Pages
