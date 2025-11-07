@@ -7,6 +7,7 @@ export type { RuntimeConfig } from './core/defineApp'
 // plugins
 export { getSketchJSON } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/tmp-production/plugin-html2sketch';
 // plugins types.d.ts
+export * from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/tmp-production/plugin-ssr/types.d';
 // @umijs/renderer-*
 export { createBrowserHistory, createHashHistory, createMemoryHistory, Helmet, HelmetProvider, createSearchParams, generatePath, matchPath, matchRoutes, Navigate, NavLink, Outlet, resolvePath, useLocation, useMatch, useNavigate, useOutlet, useOutletContext, useParams, useResolvedPath, useRoutes, useSearchParams, useAppData, useClientLoaderData, useLoaderData, useRouteProps, useSelectedRoutes, useServerLoaderData, renderClient, __getRoot, Link, useRouteData, __useFetcher, withRouter } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+renderer-react@4.5.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@umijs/renderer-react';
 export type { History, ClientLoader } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+renderer-react@4.5.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@umijs/renderer-react'
@@ -15,4 +16,4 @@ export { ApplyPluginsType, PluginManager } from '/Users/user/Desktop/pixel-ui/pi
 export { history, createHistory } from './core/history';
 export { terminal } from './core/terminal';
 // react ssr
-export const useServerInsertedHTML: Function = () => {};
+export { useServerInsertedHTML } from './core/serverInsertedHTMLContext';

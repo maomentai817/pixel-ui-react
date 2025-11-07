@@ -6,8 +6,6 @@ import { frontmatter as fm1, toc as t1 } from '/Users/user/Desktop/pixel-ui/pixe
 import { demoIndex as dmi1 } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/components/button.md?type=demo-index';
 import { frontmatter as fm2, toc as t2 } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/getting-started.md?type=frontmatter';
 import { demoIndex as dmi2 } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/getting-started.md?type=demo-index';
-import { frontmatter as fm3, toc as t3 } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/index.md?type=frontmatter';
-import { demoIndex as dmi3 } from '/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/index.md?type=demo-index';
 
 export const filesMeta = {
   'index': {
@@ -25,12 +23,6 @@ export const filesMeta = {
     toc: t2,
     demoIndex: dmi2,
     textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/getting-started.md?type=text'),
-  },
-  'docs/index': {
-    frontmatter: fm3,
-    toc: t3,
-    demoIndex: dmi3,
-    textGetter: () => import(/* webpackChunkName: "meta__docs" */'/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/index.md?type=text'),
   },
 }
 

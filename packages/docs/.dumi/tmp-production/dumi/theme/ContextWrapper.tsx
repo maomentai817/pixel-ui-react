@@ -18,7 +18,7 @@ const entryExports = {
 const pkg = {"name":"@pixel-ui-react/docs","description":"Pixel UI React 组件库文档","version":"1.0.0","license":"ISC","author":""};
 const historyType = "browser";
 const hostname = undefined;
-const themeConfig = {"title":"Pixel UI React","footer":"Copyright © 2025 Pixel UI React","prefersColor":{"default":"light","switch":false},"nprogress":true,"lastUpdated":true,"name":"Pixel UI React","logo":"/pixel-ui-react/images/homelogo.png","nav":[{"title":"开始使用","link":"/getting-started"},{"title":"组件","link":"/components/button"}],"socialLinks":{"github":"https://github.com/maomentai817/pixel-ui-react"}};
+const themeConfig = {"title":"Pixel UI React - 基于CSS Houdini的像素风React组件库","footer":"Copyright © 2025 Pixel UI React","prefersColor":{"default":"light","switch":false},"nprogress":true,"lastUpdated":true,"name":"Pixel UI React","logo":"/pixel-ui-react/images/homelogo.png","nav":[{"title":"开始使用","link":"/getting-started"},{"title":"组件","link":"/components/button"}],"socialLinks":{"github":"https://github.com/maomentai817/pixel-ui-react"}};
 const _2_level_nav_available = true;
 
 export default function DumiContextWrapper() {

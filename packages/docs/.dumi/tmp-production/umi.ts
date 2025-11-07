@@ -49,6 +49,7 @@ async function render() {
     type: ApplyPluginsType.compose,
     initialValue() {
       const context = {
+        hydrate: true,
         useStream: true,
         routes,
         routeComponents,

@@ -49,6 +49,7 @@ export function TestBrowser(props: TestBrowserProps) {
       });
       const context = {
         routes,
+        hydrate: true,
         routeComponents,
         pluginManager,
         rootElement: contextOpts.rootElement || document.getElementById('root'),

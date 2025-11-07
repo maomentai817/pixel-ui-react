@@ -32,7 +32,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "preset",
@@ -45,7 +45,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 9
       },
       "enableBy": "register",
       "type": "preset",
@@ -58,7 +58,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 3
       },
       "enableBy": "register",
       "type": "preset",
@@ -75,7 +75,7 @@
             0
           ]
         },
-        "register": 3
+        "register": 2
       },
       "enableBy": "register",
       "type": "plugin",
@@ -92,7 +92,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -105,7 +105,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -119,10 +119,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            13
+            9
           ]
         },
-        "register": 15
+        "register": 16
       },
       "enableBy": "register",
       "type": "plugin",
@@ -172,7 +172,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -185,7 +185,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -202,7 +202,7 @@
             0
           ]
         },
-        "register": 11
+        "register": 6
       },
       "enableBy": "register",
       "type": "plugin",
@@ -313,7 +313,7 @@
       "enableBy": "register",
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       }
     },
     "virtual: config-mountElementId": {
@@ -1054,7 +1054,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1071,7 +1071,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1084,7 +1084,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1097,7 +1097,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 69
+        "register": 57
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1110,7 +1110,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 17
+        "register": 18
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1127,7 +1127,7 @@
             0
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1144,7 +1144,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1170,7 +1170,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1208,7 +1208,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/okam/okam.js",
@@ -1220,7 +1220,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1247,10 +1247,10 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            0
+            1
           ]
         },
-        "register": 2
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill.js",
@@ -1262,7 +1262,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1275,7 +1275,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1364,8 +1364,21 @@
     "@umijs/preset-umi/dist/features/ssr/ssr": {
       "config": {},
       "time": {
-        "hooks": {},
-        "register": 2
+        "hooks": {
+          "modifyConfig": [
+            0
+          ],
+          "modifyDefaultConfig": [
+            0
+          ],
+          "onCheck": [
+            0
+          ],
+          "onStart": [
+            0
+          ]
+        },
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1404,7 +1417,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1417,7 +1430,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1430,7 +1443,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 4
+        "register": 3
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute.js",
@@ -1455,7 +1468,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/test/test.js",
@@ -1467,7 +1480,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent.js",
@@ -1583,7 +1596,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 18
+        "register": 17
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad.js",
@@ -1595,7 +1608,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 2
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1608,7 +1621,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1634,7 +1647,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 27
+        "register": 26
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1647,7 +1660,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 22
+        "register": 19
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/@umijs+preset-umi@4.5.3_@types+node@24.6.2_@types+react@19.2.0_@types+webpack@5.28.5_@u_33c69bbb92d4037fa480673c712a667e/node_modules/@umijs/preset-umi/dist/commands/dev/dev.js",
@@ -2049,7 +2062,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            2
+            1
           ]
         },
         "register": 0
@@ -2137,7 +2150,7 @@
             0
           ]
         },
-        "register": 32
+        "register": 25
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2160,7 +2173,7 @@
             2
           ]
         },
-        "register": 2
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2246,7 +2259,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2288,7 +2301,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.6.2_@types+react@19.2_6df58e5a629c375829b22a9b952c9f81/node_modules/dumi/dist/features/exportStatic.js",
@@ -2300,7 +2313,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 8
+        "register": 7
       },
       "type": "plugin",
       "path": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.6.2_@types+react@19.2_6df58e5a629c375829b22a9b952c9f81/node_modules/dumi/dist/features/sitemap.js",
@@ -2312,7 +2325,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2344,9 +2357,85 @@
     "outputPath": "dist",
     "base": "/pixel-ui-react/",
     "publicPath": "/pixel-ui-react/",
-    "title": "Pixel UI React",
+    "title": "Pixel UI React - 基于CSS Houdini的像素风React组件库",
     "favicons": [
       "/pixel-ui-react/images/favicon.ico"
+    ],
+    "headScripts": [],
+    "history": {
+      "type": "browser"
+    },
+    "links": [
+      {
+        "rel": "icon",
+        "href": "/pixel-ui-react/images/favicon.ico"
+      }
+    ],
+    "metas": [
+      {
+        "name": "description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "name": "keywords",
+        "content": "Pixel UI,React,组件库,像素风格,CSS Houdini,TypeScript,UI组件,像素风,React组件库,Pixel UI React"
+      },
+      {
+        "name": "author",
+        "content": "Pixel UI React Team"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "theme-color",
+        "content": "#ffffff"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Pixel UI React - 基于CSS Houdini的像素风React组件库"
+      },
+      {
+        "property": "og:description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "property": "og:image",
+        "content": "/pixel-ui-react/images/homelogo.png"
+      },
+      {
+        "property": "og:url",
+        "content": "https://maomentai817.github.io/pixel-ui-react/"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Pixel UI React"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Pixel UI React - 基于CSS Houdini的像素风React组件库"
+      },
+      {
+        "name": "twitter:description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "name": "twitter:image",
+        "content": "/pixel-ui-react/images/homelogo.png"
+      }
     ],
     "themeConfig": {
       "name": "Pixel UI React",
@@ -2376,6 +2465,8 @@
     "alias": {
       "@": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/src"
     },
+    "ssr": {},
+    "exportStatic": {},
     "codeSplitting": {
       "jsStrategy": "granularChunks"
     },
@@ -2463,13 +2554,89 @@
         {}
       ]
     },
+    "ssr": {
+      "builder": "webpack"
+    },
     "hash": true,
     "exportStatic": {},
     "esbuildMinifyIIFE": true,
     "outputPath": "dist",
-    "title": "Pixel UI React",
+    "title": "Pixel UI React - 基于CSS Houdini的像素风React组件库",
     "favicons": [
       "/pixel-ui-react/images/favicon.ico"
+    ],
+    "headScripts": [],
+    "links": [
+      {
+        "rel": "icon",
+        "href": "/pixel-ui-react/images/favicon.ico"
+      }
+    ],
+    "metas": [
+      {
+        "name": "description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "name": "keywords",
+        "content": "Pixel UI,React,组件库,像素风格,CSS Houdini,TypeScript,UI组件,像素风,React组件库,Pixel UI React"
+      },
+      {
+        "name": "author",
+        "content": "Pixel UI React Team"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "name": "theme-color",
+        "content": "#ffffff"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Pixel UI React - 基于CSS Houdini的像素风React组件库"
+      },
+      {
+        "property": "og:description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "property": "og:image",
+        "content": "/pixel-ui-react/images/homelogo.png"
+      },
+      {
+        "property": "og:url",
+        "content": "https://maomentai817.github.io/pixel-ui-react/"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Pixel UI React"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Pixel UI React - 基于CSS Houdini的像素风React组件库"
+      },
+      {
+        "name": "twitter:description",
+        "content": "基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。"
+      },
+      {
+        "name": "twitter:image",
+        "content": "/pixel-ui-react/images/homelogo.png"
+      }
     ],
     "codeSplitting": {
       "jsStrategy": "granularChunks"
@@ -2477,16 +2644,17 @@
     "targets": {
       "chrome": 80
     },
+    "define": {
+      "process.env.SSR_BUILD_TARGET": "express",
+      "SEARCH_WORKER_CODE": "\"use strict\";(()=>{var P=Object.create;var I=Object.defineProperty;var z=Object.getOwnPropertyDescriptor;var D=Object.getOwnPropertyNames,R=Object.getOwnPropertySymbols,B=Object.getPrototypeOf,E=Object.prototype.hasOwnProperty,L=Object.prototype.propertyIsEnumerable;var O=(e,t,i)=>t in e?I(e,t,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[t]=i,M=(e,t)=>{for(var i in t||(t={}))E.call(t,i)&&O(e,i,t[i]);if(R)for(var i of R(t))L.call(t,i)&&O(e,i,t[i]);return e};var F=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports);var N=(e,t,i,h)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let a of D(t))!E.call(e,a)&&a!==i&&I(e,a,{get:()=>t[a],enumerable:!(h=z(t,a))||h.enumerable});return e};var W=(e,t,i)=>(i=e!=null?P(B(e)):{},N(t||!e||!e.__esModule?I(i,\"default\",{value:e,enumerable:!0}):i,e));var j=F((K,w)=>{w.exports=function(e){var t={};function i(h){if(t[h])return t[h].exports;var a=t[h]={exports:{},id:h,loaded:!1};return e[h].call(a.exports,a,a.exports,i),a.loaded=!0,a.exports}return i.m=e,i.c=t,i.p=\"\",i(0)}([function(e,t,i){e.exports=i(1)},function(e,t,i){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0});var h=i(2);Object.defineProperty(t,\"combineChunks\",{enumerable:!0,get:function(){return h.combineChunks}}),Object.defineProperty(t,\"fillInChunks\",{enumerable:!0,get:function(){return h.fillInChunks}}),Object.defineProperty(t,\"findAll\",{enumerable:!0,get:function(){return h.findAll}}),Object.defineProperty(t,\"findChunks\",{enumerable:!0,get:function(){return h.findChunks}})},function(e,t){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0});var i=t.findAll=function(s){var n=s.autoEscape,g=s.caseSensitive,f=g===void 0?!1:g,p=s.findChunks,u=p===void 0?a:p,c=s.sanitize,v=s.searchWords,T=s.textToHighlight;return l({chunksToHighlight:h({chunks:u({autoEscape:n,caseSensitive:f,sanitize:c,searchWords:v,textToHighlight:T})}),totalLength:T?T.length:0})},h=t.combineChunks=function(s){var n=s.chunks;return n=n.sort(function(g,f){return g.start-f.start}).reduce(function(g,f){if(g.length===0)return[f];var p=g.pop();if(f.start<=p.end){var u=Math.max(p.end,f.end);g.push({highlight:!1,start:p.start,end:u})}else g.push(p,f);return g},[]),n},a=function(s){var n=s.autoEscape,g=s.caseSensitive,f=s.sanitize,p=f===void 0?d:f,u=s.searchWords,c=s.textToHighlight;return c=p(c),u.filter(function(v){return v}).reduce(function(v,T){T=p(T),n&&(T=r(T));for(var m=new RegExp(T,g?\"g\":\"gi\"),x=void 0;x=m.exec(c);){var S=x.index,$=m.lastIndex;$>S&&v.push({highlight:!1,start:S,end:$}),x.index===m.lastIndex&&m.lastIndex++}return v},[])};t.findChunks=a;var l=t.fillInChunks=function(s){var n=s.chunksToHighlight,g=s.totalLength,f=[],p=function(v,T,m){T-v>0&&f.push({start:v,end:T,highlight:m})};if(n.length===0)p(0,g,!1);else{var u=0;n.forEach(function(c){p(u,c.start,!1),p(c.start,c.end,!0),u=c.end}),p(u,g,!1)}return f};function d(o){return o}function r(o){return o.replace(/[\\-\\[\\]\\/\\{\\}\\(\\)\\*\\+\\?\\.\\\\\\^\\$\\|]/g,\"\\\\$&\")}}])});var C=W(j());var H=\"tab\";function k(e,t,i,h,a){let l=a!==void 0;return h.reduce((r,o)=>(o.tocIndex===a&&(r[o.paraId]=(r[o.paraId]||\"\").concat(o.value)),r),[]).filter(Boolean).length||l?{rawTitle:e,title:t,link:i,paragraphs:h.reduce((r,o)=>{var s,n;return o.tocIndex===a&&((n=r[s=o.paraId])!=null||(r[s]=\"\"),r[o.paraId]+=o.value),r},[]).filter(Boolean)}:null}function y(e){return[e.title,e.subtitle].filter(Boolean).join(\" \")}function _(e,t,i){let h=[],a=Object.values(t).reduce((l,d)=>{var r,o;return d.asset&&((o=l[r=d.routeId])!=null||(l[r]=[]),l[d.routeId].push(d)),l},{});return Object.values(e).forEach(l=>{var d;if(\"meta\"in l&&!(\"isLayout\"in l)){let r=l.meta,o=l.path.replace(/^([^/])/,\"/$1\")||\"/\",s=i.find(u=>o===u.link||o.startsWith(`${u.activePath}/`)),n=(a[l.id]||[]).map(u=>{var c;return(c=u.asset)==null?void 0:c.id}),g=k(\"\",y(r.frontmatter),o,r.texts),f=r.toc.reduce((u,c,v)=>{if(!n.includes(c.id)&&c.depth>=1){let T=y(r.frontmatter);c.depth!==1&&(T=`${T} - ${c.title}`),u.push(k(c.title,T,`${o}#${c.id}`,r.texts,v))}return u},[]),p=(r.tabs||[]).reduce((u,{key:c,meta:v})=>{let T=k(\"\",`${y(r.frontmatter)} - ${v.frontmatter.title}`,`${o}?${H}=${c}`,v.texts);return T&&u.push(T),u.push(...v.toc.map((m,x)=>k(m.title,`${y(r.frontmatter)} - ${v.frontmatter.title} - ${m.title}`,`${o}?${H}=${c}#${m.id}`,v.texts,x))),u},[]);h.push({navTitle:s==null?void 0:s.title,navOrder:s?i.indexOf(s):1/0,title:y(r.frontmatter),link:o,sections:[...g?[g]:[],...f,...p],demos:((d=a[l.id])==null?void 0:d.map(u=>({link:`${o}#${u.asset.id}`,rawTitle:u.asset.title||\"\",title:u.asset.title||y(r.frontmatter),description:u.asset.description||\"\",keywords:u.asset.keywords||[]})))||[]})}}),h}function b(e=\"\",t,i=1){let h=(0,C.findAll)({textToHighlight:e,searchWords:t,autoEscape:!0}),a={};return[h.map(({start:l,end:d,highlight:r},o)=>{let s={text:e.slice(l,d)};return o===0&&!r&&h.length>1&&s.text.length>20&&(s.text=`...${s.text.slice(-20)}`),r&&(s.highlighted=!0,a[t.find(n=>s.text.includes(n))]=i),s}),a]}function Y(e,t){let i=t.split(\" \"),h=new RegExp(t.replace(/[.*+?^${}()|[\\]\\\\]/g,\"\\\\$&\").replace(/\\s+/g,\"|\"),\"i\"),a={};return e.forEach(l=>{var o,s;let d=l.title,r=[];if(l.sections.forEach(n=>{for(let g of n.paragraphs)if(h.test(g)){let[f,p]=b(n.title,i,10),[u,c]=b(g,i);r.push({type:\"content\",link:n.link,priority:Object.values(M(M({},c),p)).reduce((v,T)=>v+T,0),highlightTitleTexts:f,highlightTexts:u,pageTitle:d});return}if(h.test(n.rawTitle)&&!h.test(l.title)){let[g,f]=b(n.title,i,10);r.push({type:\"title\",link:n.link,priority:Object.values(f).reduce((p,u)=>p+u,0),highlightTitleTexts:g,highlightTexts:b(n.paragraphs[0]||\"\",i)[0],pageTitle:d})}}),l.demos.forEach(n=>{if(h.test(n.rawTitle)||h.test(n.description)){let[g,f]=b(n.title,i,10),[p,u]=b(n.description,i);r.push({type:\"demo\",link:n.link,priority:Object.values(M(M({},u),f)).reduce((c,v)=>c+v,0),highlightTitleTexts:g,highlightTexts:p,pageTitle:d})}}),h.test(l.title)){let[n,g]=b(l.title,i,100);r.push({type:\"page\",link:l.link,priority:Object.values(g).reduce((f,p)=>f+p,0),highlightTitleTexts:n,highlightTexts:b(((o=l.sections[0])==null?void 0:o.paragraphs[0])||\"\",i)[0],pageTitle:d})}if(r.length){let n=l.navTitle||\"$ROOT\";(s=a[n])!=null||(a[n]={title:l.navTitle,priority:l.navOrder*1e3,hints:[]}),a[n].hints.push(...r)}}),Object.values(a).forEach(({hints:l})=>{l.sort((d,r)=>r.priority-d.priority)}),Object.values(a).sort((l,d)=>d.priority-l.priority)}var A;self.onmessage=({data:e})=>{switch(e.action){case\"generate-metadata\":A=_(e.args.routes,e.args.demos,e.args.nav);break;case\"get-search-result\":self.postMessage(Y(A,e.args.keywords));break;default:}};})();\n"
+    },
     "extraBabelIncludes": [
       "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.6.2_@types+react@19.2_6df58e5a629c375829b22a9b952c9f81/node_modules/dumi/dist/client/theme-api"
     ],
     "theme": {
       "dark-selector": "~'[data-prefers-color=\"dark\"]'"
     },
-    "babelLoaderCustomize": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.6.2_@types+react@19.2_6df58e5a629c375829b22a9b952c9f81/node_modules/dumi/dist/features/compile/babelLoaderCustomize.js",
-    "define": {
-      "SEARCH_WORKER_CODE": "\"use strict\";(()=>{var P=Object.create;var I=Object.defineProperty;var z=Object.getOwnPropertyDescriptor;var D=Object.getOwnPropertyNames,R=Object.getOwnPropertySymbols,B=Object.getPrototypeOf,E=Object.prototype.hasOwnProperty,L=Object.prototype.propertyIsEnumerable;var O=(e,t,i)=>t in e?I(e,t,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[t]=i,M=(e,t)=>{for(var i in t||(t={}))E.call(t,i)&&O(e,i,t[i]);if(R)for(var i of R(t))L.call(t,i)&&O(e,i,t[i]);return e};var F=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports);var N=(e,t,i,h)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let a of D(t))!E.call(e,a)&&a!==i&&I(e,a,{get:()=>t[a],enumerable:!(h=z(t,a))||h.enumerable});return e};var W=(e,t,i)=>(i=e!=null?P(B(e)):{},N(t||!e||!e.__esModule?I(i,\"default\",{value:e,enumerable:!0}):i,e));var j=F((K,w)=>{w.exports=function(e){var t={};function i(h){if(t[h])return t[h].exports;var a=t[h]={exports:{},id:h,loaded:!1};return e[h].call(a.exports,a,a.exports,i),a.loaded=!0,a.exports}return i.m=e,i.c=t,i.p=\"\",i(0)}([function(e,t,i){e.exports=i(1)},function(e,t,i){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0});var h=i(2);Object.defineProperty(t,\"combineChunks\",{enumerable:!0,get:function(){return h.combineChunks}}),Object.defineProperty(t,\"fillInChunks\",{enumerable:!0,get:function(){return h.fillInChunks}}),Object.defineProperty(t,\"findAll\",{enumerable:!0,get:function(){return h.findAll}}),Object.defineProperty(t,\"findChunks\",{enumerable:!0,get:function(){return h.findChunks}})},function(e,t){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0});var i=t.findAll=function(s){var n=s.autoEscape,g=s.caseSensitive,f=g===void 0?!1:g,p=s.findChunks,u=p===void 0?a:p,c=s.sanitize,v=s.searchWords,T=s.textToHighlight;return l({chunksToHighlight:h({chunks:u({autoEscape:n,caseSensitive:f,sanitize:c,searchWords:v,textToHighlight:T})}),totalLength:T?T.length:0})},h=t.combineChunks=function(s){var n=s.chunks;return n=n.sort(function(g,f){return g.start-f.start}).reduce(function(g,f){if(g.length===0)return[f];var p=g.pop();if(f.start<=p.end){var u=Math.max(p.end,f.end);g.push({highlight:!1,start:p.start,end:u})}else g.push(p,f);return g},[]),n},a=function(s){var n=s.autoEscape,g=s.caseSensitive,f=s.sanitize,p=f===void 0?d:f,u=s.searchWords,c=s.textToHighlight;return c=p(c),u.filter(function(v){return v}).reduce(function(v,T){T=p(T),n&&(T=r(T));for(var m=new RegExp(T,g?\"g\":\"gi\"),x=void 0;x=m.exec(c);){var S=x.index,$=m.lastIndex;$>S&&v.push({highlight:!1,start:S,end:$}),x.index===m.lastIndex&&m.lastIndex++}return v},[])};t.findChunks=a;var l=t.fillInChunks=function(s){var n=s.chunksToHighlight,g=s.totalLength,f=[],p=function(v,T,m){T-v>0&&f.push({start:v,end:T,highlight:m})};if(n.length===0)p(0,g,!1);else{var u=0;n.forEach(function(c){p(u,c.start,!1),p(c.start,c.end,!0),u=c.end}),p(u,g,!1)}return f};function d(o){return o}function r(o){return o.replace(/[\\-\\[\\]\\/\\{\\}\\(\\)\\*\\+\\?\\.\\\\\\^\\$\\|]/g,\"\\\\$&\")}}])});var C=W(j());var H=\"tab\";function k(e,t,i,h,a){let l=a!==void 0;return h.reduce((r,o)=>(o.tocIndex===a&&(r[o.paraId]=(r[o.paraId]||\"\").concat(o.value)),r),[]).filter(Boolean).length||l?{rawTitle:e,title:t,link:i,paragraphs:h.reduce((r,o)=>{var s,n;return o.tocIndex===a&&((n=r[s=o.paraId])!=null||(r[s]=\"\"),r[o.paraId]+=o.value),r},[]).filter(Boolean)}:null}function y(e){return[e.title,e.subtitle].filter(Boolean).join(\" \")}function _(e,t,i){let h=[],a=Object.values(t).reduce((l,d)=>{var r,o;return d.asset&&((o=l[r=d.routeId])!=null||(l[r]=[]),l[d.routeId].push(d)),l},{});return Object.values(e).forEach(l=>{var d;if(\"meta\"in l&&!(\"isLayout\"in l)){let r=l.meta,o=l.path.replace(/^([^/])/,\"/$1\")||\"/\",s=i.find(u=>o===u.link||o.startsWith(`${u.activePath}/`)),n=(a[l.id]||[]).map(u=>{var c;return(c=u.asset)==null?void 0:c.id}),g=k(\"\",y(r.frontmatter),o,r.texts),f=r.toc.reduce((u,c,v)=>{if(!n.includes(c.id)&&c.depth>=1){let T=y(r.frontmatter);c.depth!==1&&(T=`${T} - ${c.title}`),u.push(k(c.title,T,`${o}#${c.id}`,r.texts,v))}return u},[]),p=(r.tabs||[]).reduce((u,{key:c,meta:v})=>{let T=k(\"\",`${y(r.frontmatter)} - ${v.frontmatter.title}`,`${o}?${H}=${c}`,v.texts);return T&&u.push(T),u.push(...v.toc.map((m,x)=>k(m.title,`${y(r.frontmatter)} - ${v.frontmatter.title} - ${m.title}`,`${o}?${H}=${c}#${m.id}`,v.texts,x))),u},[]);h.push({navTitle:s==null?void 0:s.title,navOrder:s?i.indexOf(s):1/0,title:y(r.frontmatter),link:o,sections:[...g?[g]:[],...f,...p],demos:((d=a[l.id])==null?void 0:d.map(u=>({link:`${o}#${u.asset.id}`,rawTitle:u.asset.title||\"\",title:u.asset.title||y(r.frontmatter),description:u.asset.description||\"\",keywords:u.asset.keywords||[]})))||[]})}}),h}function b(e=\"\",t,i=1){let h=(0,C.findAll)({textToHighlight:e,searchWords:t,autoEscape:!0}),a={};return[h.map(({start:l,end:d,highlight:r},o)=>{let s={text:e.slice(l,d)};return o===0&&!r&&h.length>1&&s.text.length>20&&(s.text=`...${s.text.slice(-20)}`),r&&(s.highlighted=!0,a[t.find(n=>s.text.includes(n))]=i),s}),a]}function Y(e,t){let i=t.split(\" \"),h=new RegExp(t.replace(/[.*+?^${}()|[\\]\\\\]/g,\"\\\\$&\").replace(/\\s+/g,\"|\"),\"i\"),a={};return e.forEach(l=>{var o,s;let d=l.title,r=[];if(l.sections.forEach(n=>{for(let g of n.paragraphs)if(h.test(g)){let[f,p]=b(n.title,i,10),[u,c]=b(g,i);r.push({type:\"content\",link:n.link,priority:Object.values(M(M({},c),p)).reduce((v,T)=>v+T,0),highlightTitleTexts:f,highlightTexts:u,pageTitle:d});return}if(h.test(n.rawTitle)&&!h.test(l.title)){let[g,f]=b(n.title,i,10);r.push({type:\"title\",link:n.link,priority:Object.values(f).reduce((p,u)=>p+u,0),highlightTitleTexts:g,highlightTexts:b(n.paragraphs[0]||\"\",i)[0],pageTitle:d})}}),l.demos.forEach(n=>{if(h.test(n.rawTitle)||h.test(n.description)){let[g,f]=b(n.title,i,10),[p,u]=b(n.description,i);r.push({type:\"demo\",link:n.link,priority:Object.values(M(M({},u),f)).reduce((c,v)=>c+v,0),highlightTitleTexts:g,highlightTexts:p,pageTitle:d})}}),h.test(l.title)){let[n,g]=b(l.title,i,100);r.push({type:\"page\",link:l.link,priority:Object.values(g).reduce((f,p)=>f+p,0),highlightTitleTexts:n,highlightTexts:b(((o=l.sections[0])==null?void 0:o.paragraphs[0])||\"\",i)[0],pageTitle:d})}if(r.length){let n=l.navTitle||\"$ROOT\";(s=a[n])!=null||(a[n]={title:l.navTitle,priority:l.navOrder*1e3,hints:[]}),a[n].hints.push(...r)}}),Object.values(a).forEach(({hints:l})=>{l.sort((d,r)=>r.priority-d.priority)}),Object.values(a).sort((l,d)=>d.priority-l.priority)}var A;self.onmessage=({data:e})=>{switch(e.action){case\"generate-metadata\":A=_(e.args.routes,e.args.demos,e.args.nav);break;case\"get-search-result\":self.postMessage(Y(A,e.args.keywords));break;default:}};})();\n"
-    }
+    "babelLoaderCustomize": "/Users/user/Desktop/pixel-ui/pixel-ui-react/node_modules/.pnpm/dumi@2.4.21_@babel+core@7.28.5_@swc+helpers@0.5.15_@types+node@24.6.2_@types+react@19.2_6df58e5a629c375829b22a9b952c9f81/node_modules/dumi/dist/features/compile/babelLoaderCustomize.js"
   },
   "routes": {
     "404": {
@@ -2502,7 +2670,9 @@
       "file": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/tmp-production/dumi/theme/ContextWrapper",
       "absPath": "/",
       "isLayout": true,
-      "__absFile": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/tmp-production/dumi/theme/ContextWrapper"
+      "__absFile": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/tmp-production/dumi/theme/ContextWrapper",
+      "hasServerLoader": false,
+      "hasMetadataLoader": false
     },
     "DocLayout": {
       "id": "DocLayout",
@@ -2518,9 +2688,11 @@
       "parentId": "DocLayout",
       "file": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/pages/index.tsx",
       "absPath": "/",
-      "__content": "import React, { useEffect } from 'react';\n\nconst HomePage = () => {\n  useEffect(() => {\n    // 在首页时给 body 添加类名\n    document.body.classList.add('is-homepage');\n    return () => {\n      // 离开首页时移除类名\n      document.body.classList.remove('is-homepage');\n    };\n  }, []);\n  const features = [\n    {\n      icon: '🎨',\n      title: '像素风格自定义渲染',\n      description: '利用CSS Houdini Paint Worklet实现像素化渲染效果，为组件带来独特的像素艺术外观。用户可以通过CSS自定义变量动态调整像素大小、颜色风格、边框样式等，打造独一无二的UI风格。'\n    },\n    {\n      icon: '⚙️',\n      title: '全面类型支持与TypeScript友好',\n      description: '所有组件均使用TypeScript编写，并提供完整类型定义。支持智能提示、类型校验以及良好的IDE体验，帮助开发者高效构建类型安全的项目。'\n    },\n    {\n      icon: '🧩',\n      title: '单文件组件结构+Monorepo管理',\n      description: '每个组件以独立的SFC单文件形式开发，利于维护和按需加载。使用Monorepo管理架构，支持模块化构建与统一版本控制，适配现代前端工程化流程。'\n    },\n    {\n      icon: '🧪',\n      title: '完整测试覆盖',\n      description: '使用Vitest提供单元测试保障，核心逻辑覆盖率达到100%。每个组件均配套测试用例，确保组件稳定性与长期可维护性。'\n    },\n    {\n      icon: '📖',\n      title: 'Dumi 文档系统',\n      description: '使用Dumi提供Markdown风格的文档网站。支持Playground、属性切换与源码查看，支持移动端查看，提升学习与使用体验。'\n    },\n    {\n      icon: '💡',\n      title: '像素风字体与主题系统',\n      description: '内置多种像素风格字体，并支持自定义注册字体。提供像素风主题变量系统，实现不同视觉风格快速切换，支持夜间模式和复古配色方案。'\n    },\n    {\n      icon: '🧱',\n      title: '兼容React+TypeScript',\n      description: '基于React开发，完美适配TypeScript。支持极速开发与极致按需打包。'\n    },\n    {\n      icon: '🚀',\n      title: '支持渐进式集成',\n      description: '支持完整引入与单组件引入，便于逐步迁移。你可以在不影响现有项目的前提下，按需引入任意组件进行替换或增强，实现平滑升级。'\n    }\n  ];\n\n  return (\n    <div className=\"home-page\">\n      {/* Hero Section */}\n      <section className=\"home-hero\">\n        <div className=\"home-hero-container\">\n          <div className=\"home-hero-content\">\n            <h1 className=\"home-hero-title\">Pixel-UI React</h1>\n            <p className=\"home-hero-description\">基于CSS_Houdini的像素风组件库🐱</p>\n            <div className=\"home-hero-actions\">\n              <a className=\"home-hero-button\" href=\"/pixel-ui-react/getting-started\">开始使用</a>\n            </div>\n          </div>\n          <div className=\"home-hero-image\">\n            <div className=\"home-hero-image-inner\"></div>\n            <img src=\"/pixel-ui-react/images/homelogo.png\" alt=\"Pixel-UI React\" />\n          </div>\n        </div>\n      </section>\n\n      {/* Features Section */}\n      <section className=\"home-features\">\n        <div className=\"home-features-container\">\n          {features.map((feature, index) => (\n            <div key={index} className=\"home-feature-card\">\n              <div className=\"home-feature-icon\">{feature.icon}</div>\n              <h3 className=\"home-feature-title\">{feature.title}</h3>\n              <p className=\"home-feature-description\">{feature.description}</p>\n            </div>\n          ))}\n        </div>\n      </section>\n    </div>\n  );\n};\n\nexport default HomePage;\n",
+      "__content": "import React, { useEffect, useState } from 'react';\n\nconst HomePage = () => {\n  const [isScrolled, setIsScrolled] = useState(false);\n\n  useEffect(() => {\n    // 在首页时给 body 添加类名\n    document.body.classList.add('is-homepage');\n\n    // 滚动监听\n    const handleScroll = () => {\n      const scrollTop = window.scrollY || document.documentElement.scrollTop;\n      setIsScrolled(scrollTop > 50); // 滚动超过 50px 时触发\n    };\n\n    // 初始检查\n    handleScroll();\n\n    window.addEventListener('scroll', handleScroll, { passive: true });\n\n    return () => {\n      window.removeEventListener('scroll', handleScroll);\n      document.body.classList.remove('is-homepage');\n      document.body.classList.remove('is-homepage-scrolled');\n    };\n  }, []);\n\n  useEffect(() => {\n    // 根据滚动状态添加/移除类名\n    if (isScrolled) {\n      document.body.classList.add('is-homepage-scrolled');\n    } else {\n      document.body.classList.remove('is-homepage-scrolled');\n    }\n  }, [isScrolled]);\n\n  useEffect(() => {\n    document.title = 'Pixel UI React';\n  }, []);\n\n  const features = [\n    {\n      icon: '🎨',\n      title: '像素风格自定义渲染',\n      description: '利用CSS Houdini Paint Worklet实现像素化渲染效果，为组件带来独特的像素艺术外观。用户可以通过CSS自定义变量动态调整像素大小、颜色风格、边框样式等，打造独一无二的UI风格。'\n    },\n    {\n      icon: '⚙️',\n      title: '全面类型支持与TypeScript友好',\n      description: '所有组件均使用TypeScript编写，并提供完整类型定义。支持智能提示、类型校验以及良好的IDE体验，帮助开发者高效构建类型安全的项目。'\n    },\n    {\n      icon: '🧩',\n      title: '单文件组件结构+Monorepo管理',\n      description: '每个组件以独立的SFC单文件形式开发，利于维护和按需加载。使用Monorepo管理架构，支持模块化构建与统一版本控制，适配现代前端工程化流程。'\n    },\n    {\n      icon: '🧪',\n      title: '完整测试覆盖',\n      description: '使用Vitest提供单元测试保障，核心逻辑覆盖率达到100%。每个组件均配套测试用例，确保组件稳定性与长期可维护性。'\n    },\n    {\n      icon: '📖',\n      title: 'Dumi 文档系统',\n      description: '使用Dumi提供Markdown风格的文档网站。支持Playground、属性切换与源码查看，支持移动端查看，提升学习与使用体验。'\n    },\n    {\n      icon: '💡',\n      title: '像素风字体与主题系统',\n      description: '内置多种像素风格字体，并支持自定义注册字体。提供像素风主题变量系统，实现不同视觉风格快速切换，支持夜间模式和复古配色方案。'\n    },\n    {\n      icon: '🧱',\n      title: '兼容React+TypeScript',\n      description: '基于React开发，完美适配TypeScript。支持极速开发与极致按需打包。'\n    },\n    {\n      icon: '🚀',\n      title: '支持渐进式集成',\n      description: '支持完整引入与单组件引入，便于逐步迁移。你可以在不影响现有项目的前提下，按需引入任意组件进行替换或增强，实现平滑升级。'\n    }\n  ];\n\n  return (\n    <div className=\"home-page\">\n      {/* Hero Section */}\n      <section className=\"home-hero\">\n        <div className=\"home-hero-container\">\n          <div className=\"home-hero-content\">\n            <h1 className=\"home-hero-title\">Pixel-UI React</h1>\n            <p className=\"home-hero-description\">基于CSS_Houdini的像素风组件库🐱</p>\n            <div className=\"home-hero-actions\">\n              <a className=\"home-hero-button\" href=\"/pixel-ui-react/getting-started\">开始使用</a>\n            </div>\n          </div>\n          <div className=\"home-hero-image\">\n            <div className=\"home-hero-image-inner\"></div>\n            <img src=\"/pixel-ui-react/images/homelogo.png\" alt=\"Pixel-UI React\" />\n          </div>\n        </div>\n      </section>\n\n      {/* Features Section */}\n      <section className=\"home-features\">\n        <div className=\"home-features-container\">\n          {features.map((feature, index) => (\n            <div key={index} className=\"home-feature-card\">\n              <div className=\"home-feature-icon\">{feature.icon}</div>\n              <h3 className=\"home-feature-title\">{feature.title}</h3>\n              <p className=\"home-feature-description\">{feature.description}</p>\n            </div>\n          ))}\n        </div>\n      </section>\n    </div>\n  );\n};\n\nexport default HomePage;\n",
       "__isJSFile": true,
-      "__absFile": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/pages/index.tsx"
+      "__absFile": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/.dumi/pages/index.tsx",
+      "hasServerLoader": false,
+      "hasMetadataLoader": false
     },
     "docs/components/button": {
       "path": "components/button",
@@ -2535,13 +2707,6 @@
       "parentId": "DocLayout",
       "file": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/getting-started.md",
       "absPath": "/getting-started"
-    },
-    "docs/index": {
-      "path": "",
-      "id": "docs/index",
-      "parentId": "DocLayout",
-      "file": "/Users/user/Desktop/pixel-ui/pixel-ui-react/packages/docs/docs/index.md",
-      "absPath": "/"
     },
     "demo-render": {
       "id": "demo-render",

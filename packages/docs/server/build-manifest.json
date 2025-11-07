@@ -1,0 +1,23 @@
+{
+  "assets": {
+    "public/robots.txt": "/pixel-ui-react/robots.txt",
+    "public/sitemap.xml": "/pixel-ui-react/sitemap.xml",
+    "public/fonts/PS2P.woff2": "/pixel-ui-react/fonts/PS2P.woff2",
+    "public/fonts/Zpix.woff2": "/pixel-ui-react/fonts/Zpix.woff2",
+    "public/images/Starbucks.png": "/pixel-ui-react/images/Starbucks.png",
+    "public/images/cat.gif": "/pixel-ui-react/images/cat.gif",
+    "public/images/e.png": "/pixel-ui-react/images/e.png",
+    "public/images/favicon.ico": "/pixel-ui-react/images/favicon.ico",
+    "public/images/homelogo.png": "/pixel-ui-react/images/homelogo.png",
+    "public/images/image1_portrait.jpg": "/pixel-ui-react/images/image1_portrait.jpg",
+    "public/images/monaka.jpg": "/pixel-ui-react/images/monaka.jpg",
+    "public/images/pet.gif": "/pixel-ui-react/images/pet.gif",
+    "public/images/taffy.gif": "/pixel-ui-react/images/taffy.gif",
+    "public/images/twoking.gif": "/pixel-ui-react/images/twoking.gif",
+    "public/images/xinlang.jpg": "/pixel-ui-react/images/xinlang.jpg",
+    "public/images/xtaffy.png": "/pixel-ui-react/images/xtaffy.png",
+    "umi.css": "/pixel-ui-react/umi.ac144579.css",
+    "umi.js": "/pixel-ui-react/umi.b42a6a67.server.js",
+    "meta__docs.js": "/pixel-ui-react/meta__docs.eb0d0954.server.js"
+  }
+}
