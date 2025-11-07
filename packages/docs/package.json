@@ -1,0 +1,26 @@
+{
+  "name": "@pixel-ui-react/docs",
+  "version": "1.0.0",
+  "description": "Pixel UI React 组件库文档",
+  "private": true,
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "preview": "dumi preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "@mmt817/pixel-ui-react": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "dumi": "^2.4.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+.px-text--base {
+  color: var(--px-color-base);
+}
+.px-text--primary {
+  color: var(--px-color-primary);
+}
+.px-text--success {
+  color: var(--px-color-success);
+}
+.px-text--warning {
+  color: var(--px-color-warning);
+}
+.px-text--danger {
+  color: var(--px-color-danger);
+}
+.px-text--sakura {
+  color: var(--px-text-color-sakura);
+}
+.is-compact {
+  line-height: 1;
+}

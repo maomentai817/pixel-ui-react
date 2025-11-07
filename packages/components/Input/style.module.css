@@ -1,0 +1,227 @@
+.px-input {
+  --px-input-text-color: var(--px-text-color-regular);
+  --px-input-focus-border: var(--px-color-primary);
+  --px-input-border-color: var(--px-color-base);
+  --px-input-bg-color: var(--px-color-white);
+  --px-input-icon-color: var(--px-text-color-placeholder);
+  --px-input-placeholder-color: var(--px-text-color-placeholder);
+  --px-input-hover-border-color: var(--px-border-color-hover);
+  --px-input-clear-hover-color: var(--px-text-color-secondary);
+  --px-input-focus-border-color: var(--px-color-primary);
+
+  --px-component-size-large: 40px;
+  --px-component-size: 32px;
+  --px-component-size-small: 24px;
+  --px-input-inner-padding: calc(var(--px-border) + 1px);
+  --px-input-inner-height: calc(var(--px-component-size, 32px) - var(--px-input-inner-padding) * 2);
+}
+
+.px-input {
+  --px-input-height: var(--px-component-size);
+  position: relative;
+  font-size: var(--px-font-size-small);
+  font-family: var(--px-font-family);
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  /* css houdini paintWorklet */
+  background-image: paint(pixelbox);
+  --px-border: 3px;
+  --px-border-t: 3px;
+  --px-border-r: 3px;
+  --px-border-b: 3px;
+  --px-border-l: 3px;
+  --px-border-radius: 0px;
+  --px-border-color: var(--px-input-border-color);
+  --px-bg-color: var(--px-input-bg-color);
+  --px-bg-shadow-color: transparent;
+
+  /* 禁用原生 password 可见性切换按钮 */
+  input[type="password"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-security: square;
+    
+    &::-ms-reveal {
+      display: none;
+      pointer-events:none;
+    }
+    &::-ms-clear {
+      display: none;
+    }
+    &::-webkit-credentials-cramble-button {
+      appearance: none;
+    }
+  }
+
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: .8;
+    --px-input-bg-color: var(--px-color-info-dark-1);
+    .px-input__inner {
+      font-family: var(--px-font-family);
+      color: var(--px-disabled-text-color);
+      -webkit-text-fill-color: var(--px-disabled-text-color);
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+    .px-textarea__inner {
+      font-family: var(--px-font-family);
+      color: var(--px-disabled-text-color);
+      -webkit-text-fill-color: var(--px-disabled-text-color);
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+  }
+
+  &.is-focus  {
+    --px-input-border-color: var(--px-input-focus-border-color);
+  }
+}
+
+.px-input--large {
+  --px-input-height: var(--px-component-size-large);
+  font-size: 12px;
+  .px-input__wrapper {
+    padding: var(--px-input-inner-padding) 15px;
+    .px-input__inner {
+      --px-input-inner-height: calc(var(--px-input-height, 40px) - var(--px-input-inner-padding) * 2);
+    }
+  }
+
+}
+.px-input--small {
+  --px-input-height: var(--px-component-size-small);
+  font-size: 10px;
+  .px-input__wrapper {
+    padding: var(--px-input-inner-padding) 7px;
+    .px-input__inner {
+      --px-input-inner-height: calc(var(--px-input-height, 24px) - var(--px-input-inner-padding) * 2);
+    } 
+  }
+}
+.px-input__prefix, .px-input__suffix {
+  display: inline-flex;
+  white-space: nowrap;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  height: 100%;
+  text-align: center;
+  color: var(--px-input-icon-color);
+  transition: all var(--px-transition-duration-400);
+}
+.px-input__prefix {
+  margin-right: 8px;
+}
+.px-input__suffix {
+  margin-left: 8px;
+}
+.px-input__prepend, .px-input__append {
+  --px-input-bg-color: var(--px-disabled-bg-color);
+  color: var(--px-color-info);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  line-height: var(--px-input-inner-height);
+  padding: 0 20px;
+  margin: var(--px-input-inner-padding);
+  background-color: var(--px-color-info-dark-1);
+  white-space: nowrap;
+}
+.px-input__prepend {
+  border-right: var(--px-border) solid var(--px-input-border-color);
+}
+.px-input__append {
+  border-left: var(--px-border) solid var(--px-input-border-color);
+}
+
+.px-input--textarea {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  font-size: var(--px-font-size-small);
+}
+.px-textarea__wrapper {
+  position: relative;
+  display: block;
+  resize: vertical;
+  padding: 5px 11px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--px-input-text-color);
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: var(--px-font-size-small);
+    font-family: var(--px-font-family);
+    color: var(--px-input-placeholder-color);
+    height: inherit !important;
+  }
+}
+.px-input__wrapper {
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: var(--px-input-inner-padding) 11px;
+
+  .px-input__inner {
+    --px-input-inner-height: calc(var(--px-input-height, 32px) - var(--px-input-inner-padding) * 2);
+    width: 100%;
+    flex-grow: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    color: var(--px-input-text-color);
+    background-color: transparent;
+    font-size: inherit;
+    font-family: var(--px-font-family);
+    height: var(--px-input-inner-height);
+    line-height: var(--px-input-inner-height);
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-size: var(--px-font-size-small);
+      font-family: var(--px-font-family);
+      color: var(--px-input-placeholder-color);
+      height: inherit !important;
+    }
+  }  
+  .px-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all var(--px-transition-duration-400);
+    margin-left: 8px;
+  }
+  .px-input__clear, .px-input__password {
+    color: var(--px-input-icon-color);
+    font-size: 14px;
+      cursor: var(--px-cursor-pointer-src) 14 0, pointer;
+    &:hover {
+      color: var(--px-input-clear-hover-color);
+    }
+  }
+}

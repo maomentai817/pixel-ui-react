@@ -1,0 +1,434 @@
+.px-button {
+  --px-button-font-weight: var(--px-font-weight-base);
+  --px-button-border-color: var(--px-color-base);
+  --px-button-bg-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-info-dark-2);
+  --px-button-text-color: var(--px-color-base);
+  --px-button-text-color-disabled: var(--px-color-info);
+  --px-button-bg-color-disabled: var(--px-color-info);
+  --px-button-border-color-disabled: var(--px-border-color-disabled);
+  --px-button-hover-bg-color: var(--px-color-info-dark-1);
+  --px-button-font-size: var(--px-font-size-small);
+  --px-button-size: 34px;
+  --px-button-padding: calc((var(--px-button-size) - var(--px-button-font-size)) / 2);
+  --px-button-bg-shadow-border: 3px;
+}
+
+.px-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  white-space: nowrap;
+  cursor:
+    var(--px-cursor-pointer-src) 14 0,
+    pointer;
+  color: var(--px-button-text-color);
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: var(--px-transition-duration);
+  font-weight: var(--px-button-font-weight);
+  user-select: none;
+  vertical-align: baseline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  height: var(--px-button-size);
+  padding: var(--px-button-padding);
+  padding-bottom: calc(var(--px-button-padding) + var(--px-button-bg-shadow-border));
+  margin: 0 3px;
+  font-size: var(--px-button-font-size);
+  font-family: var(--px-font-family);
+
+  i {
+    transform: translateY(1px);
+  }
+
+  /* CSS Houdini Paint */
+  background-image: paint(pixelbox);
+  --px-border: 3px;
+  --px-border-t: 3px;
+  --px-border-r: 3px;
+  --px-border-b: 3px;
+  --px-border-l: 3px;
+  --px-border-radius: 0px;
+  --px-border-color: var(--px-color-base);
+  --px-bg-color: var(--px-color-white);
+  --px-bg-shadow-border: var(--px-button-bg-shadow-border);
+  --px-bg-shadow-color: var(--px-button-bg-shadow-color);
+  --px-bg-shadow-position: bottom-right;
+  /* button single 区别于 button-group */
+  --px-button-single: 1;
+}
+
+/* button hover */
+.px-button:hover {
+  --px-bg-color: var(--px-color-info-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* button active */
+.px-button:active {
+  --px-bg-shadow-position: top-left;
+}
+
+/* button type */
+/* primary */
+.px-button--base {
+  --px-button-text-color: var(--px-color-base);
+  --px-bg-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-info-dark-2);
+}
+
+.px-button--base:hover {
+  --px-bg-color: var(--px-color-info-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+.px-button--primary {
+  --px-button-text-color: var(--px-color-white);
+  --px-bg-color: var(--px-color-primary);
+  --px-button-bg-shadow-color: var(--px-color-primary-dark-2);
+}
+
+.px-button--primary {
+  i {
+    color: var(--px-color-white);
+  }
+}
+
+.px-button--primary:hover {
+  --px-bg-color: var(--px-color-primary-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* success */
+.px-button--success {
+  --px-button-text-color: var(--px-color-white);
+  --px-bg-color: var(--px-color-success);
+  --px-button-bg-shadow-color: var(--px-color-success-dark-2);
+}
+
+.px-button--success {
+  i {
+    color: var(--px-color-white);
+  }
+}
+
+.px-button--success:hover {
+  --px-bg-color: var(--px-color-success-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* warning */
+.px-button--warning {
+  --px-button-text-color: var(--px-color-white);
+  --px-bg-color: var(--px-color-warning);
+  --px-button-bg-shadow-color: var(--px-color-warning-dark-2);
+}
+
+.px-button--warning {
+  i {
+    color: var(--px-color-white);
+  }
+}
+
+.px-button--warning:hover {
+  --px-bg-color: var(--px-color-warning-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* danger */
+.px-button--danger {
+  --px-button-text-color: var(--px-color-white);
+  --px-bg-color: var(--px-color-danger);
+  --px-button-bg-shadow-color: var(--px-color-danger-dark-2);
+}
+
+.px-button--danger {
+  i {
+    color: var(--px-color-white);
+  }
+}
+
+.px-button--danger:hover {
+  --px-bg-color: var(--px-color-danger-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* sakura */
+.px-button--sakura {
+  --px-button-text-color: var(--px-text-color-sakura);
+  --px-bg-color: var(--px-color-sakura);
+  --px-button-bg-shadow-color: var(--px-color-sakura-dark-2);
+}
+
+.px-button--sakura {
+  i {
+    color: var(--px-text-color-sakura);
+  }
+}
+
+.px-button--sakura:hover {
+  --px-bg-color: var(--px-color-sakura-dark-1);
+  --px-bg-shadow-border: 4px;
+}
+
+/* disabled */
+.px-button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+  --px-button-text-color: var(--px-color-white);
+  --px-bg-color: var(--px-color-info);
+  --px-button-bg-shadow-color: var(--px-color-info-dark-2);
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button.is-disabled:hover {
+  cursor: not-allowed;
+  --px-bg-shadow-border: 3px;
+}
+
+.px-button.is-disabled:active {
+  --px-bg-shadow-position: bottom-right;
+}
+
+.px-button--primary.is-disabled {
+  --px-bg-color: var(--px-color-primary-light-5);
+  --px-button-bg-shadow-color: var(--px-color-primary-light-3);
+}
+
+.px-button--success.is-disabled {
+  --px-bg-color: var(--px-color-success-light-5);
+  --px-button-bg-shadow-color: var(--px-color-success-light-3);
+}
+
+.px-button--warning.is-disabled {
+  --px-bg-color: var(--px-color-warning-light-5);
+  --px-button-bg-shadow-color: var(--px-color-warning-light-3);
+}
+
+.px-button--danger.is-disabled {
+  --px-bg-color: var(--px-color-danger-light-5);
+  --px-button-bg-shadow-color: var(--px-color-danger-light-3);
+}
+
+.px-button--sakura.is-disabled {
+  --px-bg-color: var(--px-color-sakura-light-5);
+  --px-button-bg-shadow-color: var(--px-color-sakura-light-3);
+}
+
+/* button size */
+.px-button--small {
+  --px-button-size: 28px;
+  --px-button-font-size: 10px;
+}
+
+.px-button--large {
+  --px-button-size: 40px;
+  --px-button-font-size: 14px;
+}
+
+/* plain */
+.px-button.is-plain {
+  --px-button-text-color: var(--px-color-base);
+  --px-button-bg-shadow-color: var(--px-color-white);
+  --px-bg-color: transparent;
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button.is-plain.is-disabled {
+  --px-button-text-color: var(--px-text-color-secondary);
+}
+
+.px-button--primary.is-plain {
+  --px-button-text-color: var(--px-color-primary);
+  --px-button-bg-shadow-color: var(--px-color-primary);
+  --px-bg-color: var(--px-color-primary-light-9);
+  --px-border-color: var(--px-color-primary-dark-1);
+}
+
+.px-button--primary.is-plain:hover {
+  --px-button-text-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-primary-dark-2);
+  --px-bg-color: var(--px-color-primary);
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button--success.is-plain {
+  --px-button-text-color: var(--px-color-success);
+  --px-button-bg-shadow-color: var(--px-color-success);
+  --px-bg-color: var(--px-color-success-light-9);
+  --px-border-color: var(--px-color-success-dark-1);
+}
+
+.px-button--success.is-plain:hover {
+  --px-button-text-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-success-dark-2);
+  --px-bg-color: var(--px-color-success);
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button--warning.is-plain {
+  --px-button-text-color: var(--px-color-warning);
+  --px-button-bg-shadow-color: var(--px-color-warning);
+  --px-bg-color: var(--px-color-warning-light-9);
+  --px-border-color: var(--px-color-warning-dark-1);
+}
+
+.px-button--warning.is-plain:hover {
+  --px-button-text-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-warning-dark-2);
+  --px-bg-color: var(--px-color-warning);
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button--danger.is-plain {
+  --px-button-text-color: var(--px-color-danger);
+  --px-button-bg-shadow-color: var(--px-color-danger);
+  --px-bg-color: var(--px-color-danger-light-9);
+  --px-border-color: var(--px-color-danger-dark-1);
+}
+
+.px-button--danger.is-plain:hover {
+  --px-button-text-color: var(--px-color-white);
+  --px-button-bg-shadow-color: var(--px-color-danger-dark-2);
+  --px-bg-color: var(--px-color-danger);
+  --px-border-color: var(--px-color-base);
+}
+
+.px-button--sakura.is-plain {
+  --px-button-text-color: var(--px-text-color-sakura);
+  --px-button-bg-shadow-color: var(--px-color-sakura);
+  --px-bg-color: var(--px-color-sakura-light-9);
+  --px-border-color: var(--px-color-sakura-dark-1);
+}
+
+.px-button--sakura.is-plain:hover {
+  --px-button-text-color: var(--px-text-color-sakura);
+  --px-button-bg-shadow-color: var(--px-color-sakura-dark-2);
+  --px-bg-color: var(--px-color-sakura);
+  --px-border-color: var(--px-color-base);
+}
+
+/* round */
+.px-button.is-round {
+  --px-border-radius: 1px;
+  --px-border-radius-lt: 1px;
+  --px-border-radius-rt: 1px;
+  --px-border-radius-lb: 1px;
+  --px-border-radius-rb: 1px;
+}
+
+/* circle */
+.px-button.is-circle {
+  --px-border-radius: 2px;
+  --px-border-radius-lt: 2px;
+  --px-border-radius-rt: 2px;
+  --px-border-radius-lb: 2px;
+  --px-border-radius-rb: 2px;
+}
+
+/* chubby 新的圆角样式 */
+.px-button.is-chubby {
+  --px-button-size: 60px;
+  --px-border: 4px;
+  --px-border-t: 4px;
+  --px-border-r: 4px;
+  --px-border-b: 4px;
+  --px-border-l: 4px;
+  --px-border-radius: 5px;
+  --px-border-radius-lt: 5px;
+  --px-border-radius-rt: 5px;
+  --px-border-radius-lb: 5px;
+  --px-border-radius-rb: 5px;
+  --px-bg-shadow-border: 4px;
+}
+
+/* custom button colors */
+.px-button.is-custom {
+  --px-button-text-color: var(--px-text-color);
+  --px-border-color: var(--px-button-border-color);
+}
+
+.px-button.is-custom:hover {
+  --px-button-text-color: var(--px-hover-text-color);
+  --px-bg-color: var(--px-hover-bg-color) !important;
+  --px-bg-shadow-border: 4px;
+}
+
+.px-button.is-custom.is-disabled {
+  --px-button-text-color: var(--px-text-color);
+  --px-bg-color: var(--px-disabled-bg-color) !important;
+  --px-button-bg-shadow-color: var(--px-hover-bg-color) !important;
+  --px-button-border-color: var(--px-color-base) !important;
+}
+
+.px-button.is-custom.is-disabled:hover {
+  --px-bg-shadow-border: 3px;
+}
+
+.px-button.is-custom.is-plain {
+  --px-button-text-color: var(--px-text-color) !important;
+  --px-bg-color: var(--px-plain-bg-color) !important;
+  --px-button-border-color: var(--px-plain-border-color) !important;
+  --px-button-bg-shadow-color: var(--px-plain-border-color);
+}
+
+.px-button.is-custom.is-plain:hover {
+  --px-button-text-color: var(--px-hover-text-color) !important;
+  --px-button-border-color: var(--px-color-base) !important;
+  --px-bg-color: var(--px-hover-bg-color) !important;
+  --px-button-bg-shadow-color: var(--px-plain-bg-shadow-color);
+}
+
+/* ----------- button group ----------- */
+.px-button-group {
+  --px-button-group-border-color: var(--px-color-base);
+}
+
+.px-button-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.px-button-group::after {
+  content: '';
+  clear: both;
+}
+
+.px-button-group>.px-button {
+  float: left;
+  position: relative;
+  --px-button-single: 0;
+
+  &:first-child {
+    --px-border-radius-rt: 0;
+    --px-border-radius-rb: 0;
+    --px-border-color: var(--px-button-group-border-color);
+    --px-border-r: 0;
+    --px-button-group-first: 1;
+    margin-right: 0;
+  }
+
+  &:last-child {
+    --px-border-radius-lt: 0;
+    --px-border-radius-lb: 0;
+    --px-border-l: 0;
+    --px-button-group-last: 1;
+    margin-left: -4px;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    --px-border-radius: 0;
+    --px-border-l: 0;
+    --px-border-r: 0;
+    --px-border-color: var(--px-button-group-border-color);
+    --px-button-group-flag: 1;
+    margin: 0;
+    margin-left: -4px;
+  }
+}

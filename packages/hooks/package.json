@@ -1,0 +1,30 @@
+{
+  "name": "@pixel-ui-react/hooks",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/hooks/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "vitest --run --coverage",
+    "build": "vite build"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "lodash-es": "^4.17.21",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@pixel-ui-react/components": [
+        "./packages/components"
+      ]
+    }
+  },
+  "include": [
+    "env.d.ts",
+    "packages/**/types/*.d.ts",
+    "packages/core/**/*.ts",
+    "packages/core/**/*.tsx",
+    "packages/hooks/**/*.ts",
+    "packages/hooks/**/*.tsx",
+    "packages/utils/**/*.ts",
+    "packages/components/**/*.ts",
+    "packages/components/**/*.tsx",
+    "packages/worklets/**/*.ts"
+  ],
+  "exclude": [
+    "packages/**/__tests__/**/*",
+    "packages/**/test/**/*",
+    "packages/**/vitest.config.ts",
+    "packages/**/vite.config.ts",
+    "packages/**/rollup.config.ts",
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "@mmt817/pixel-ui-react",
+  "version": "1.6.0",
+  "description": "Pixel-UI Components library by React + TS",
+  "type": "module",
+  "keywords": [
+    "pixel",
+    "pixel-ui",
+    "houdini",
+    "paintWorklet",
+    "components",
+    "react",
+    "library"
+  ],
+  "author": "heiheihoho1213",
+  "license": "MIT",
+  "homepage": "https://maomentai817.github.io/pixel-ui-react/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomentai817/pixel-ui-react"
+  },
+  "main": "./dist/umd/index.umd.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/core/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.umd.cjs",
+      "types": "./dist/types/core/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
+  "sideEffects": [
+    "./dist/index.css"
+  ],
+  "scripts": {
+    "build": "run-s worklet build-es build-umd",
+    "build:watch": "run-p build-es:watch build-umd:watch",
+    "build-umd": "vite build --config vite.umd.config.ts",
+    "build-es": "vite build --config vite.es.config.ts",
+    "build-umd:watch": "vite build --watch --config vite.umd.config.ts",
+    "build-es:watch": "vite build --watch --config vite.es.config.ts",
+    "release": "release-it",
+    "worklet": "pnpm --filter @pixel-ui-react/components worklet"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "@hackernoon/pixel-icon-library": "^1.0.5",
+    "@popperjs/core": "^2.11.8",
+    "react-transition-group": "^4.4.5",
+    "async-validator": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/react-transition-group": "^4.4.12",
+    "@pixel-ui-react/components": "workspace:*",
+    "@rollup/plugin-terser": "^0.4.4",
+    "terser": "^5.39.0",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
