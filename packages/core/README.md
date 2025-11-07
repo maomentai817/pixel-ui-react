@@ -4,17 +4,19 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/@mmt817/pixel-ui-react)](https://www.npmjs.com/package/@mmt817/pixel-ui-react)
-[![node](https://img.shields.io/badge/node-%20%3E%3D%2018-47c219)](https://github.com/maomentai817/pixel-ui-react)
-[![downloads](https://img.shields.io/npm/dw/@mmt817/pixel-ui-react)](https://www.npmcharts.com/compare/@mmt817/pixel-ui-react)
+[![npm](https://img.shields.io/npm/v/@mmt817/pixel-ui)](https://www.npmjs.com/package/@mmt817/pixel-ui)
+[![node](https://img.shields.io/badge/node-%20%3E%3D%2020-47c219)](https://github.com/maomentai817/pixel-ui)
+[![downloads](https://img.shields.io/npm/dw/@mmt817/pixel-ui)](https://www.npmcharts.com/compare/@mmt817/pixel-ui)
 
 </div>
 
 <p align="center">Pixel UI React - A React UI library</p>
 
-Pixel UI React 是一个基于 **React** + **TypeScript** + **CSS Houdini** 打造的像素风组件库。  
+Pixel UI 是一个基于 **React 19** + **TypeScript** + **CSS Houdini** 打造的像素风组件库。  
 从像素边框到复古字体, 力求还原游戏机时代的像素艺术，  
 为现代 Web 应用注入复古科技感 🎮✨。
+
+**此仓库为 [Pixel UI](https://github.com/maomentai817/pixel-ui) 的 React 版本 🎉🎉**
 
 ---
 ## 🌐 浏览器支持
@@ -54,6 +56,7 @@ pnpm build
 
 # 3. 项目运行
 pnpm dev  # 启动 playground
+pnpm docs:dev # 启动 dumi 文档
 
 # 其他
 pnpm test # 对 utils, hooks, components 分包进行单元测试
@@ -67,7 +70,7 @@ pnpm test # 对 utils, hooks, components 分包进行单元测试
   使用 CSS Houdini Paint Worklet 实现像素化边框、阴影、装饰等复古风格特效
 
 - 🧩 **React + TypeScript 全面支持**  
-  使用 React Hooks 与类型推导提升 DX，支持智能提示与类型校验
+  使用 RFC Hooks 与类型推导提升 DX，支持智能提示与类型校验
 
 - 💡 **CSS 自定义属性调控**  
   可动态配置像素大小、颜色主题、边角样式，打造专属 UI 风格
@@ -78,12 +81,12 @@ pnpm test # 对 utils, hooks, components 分包进行单元测试
 - 📦 **Tree-shakable 与按需加载**  
   支持全量引入与 ES Module 按需加载，极致优化打包体积
 
-- 📖 **双文档系统：VitePress + Storybook**  
+- 📖 **文档系统：dumi**  
   Markdown 文档 + 组件交互演示，一站式了解与使用
 
 ## 🔗 链接 Links
 
-- [首页](https://maomentai817.github.io/pixel-ui-react/)
+- [首页](https://maomentai817.github.io/pixel-ui/)
 - [图标库](https://pixeliconlibrary.com/)
 - [部分样式参考](https://nostalgic-css.github.io/NES.css/#)
 - [paintWorklet 学习](https://jerosoler.github.io/css-houdini-pixel-box/)

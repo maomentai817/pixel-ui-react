@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback, memo, useRef, useEffect } from 'react'
+import type { JSX } from 'react'
 import { bind, debounce } from 'lodash-es'
 import { createPopper, type Instance } from '@popperjs/core'
 import { CSSTransition } from 'react-transition-group'
@@ -10,7 +11,7 @@ import useEventsToTriggerNode from './useEventsToTriggerNode'
 import type { TooltipProps } from './types'
 import styles from './style.module.css'
 
-const Tooltip: React.FC<TooltipProps> = (props: TooltipProps): React.ReactElement => {
+const Tooltip = (props: TooltipProps): JSX.Element => {
   const {
     content,
     trigger = 'hover',

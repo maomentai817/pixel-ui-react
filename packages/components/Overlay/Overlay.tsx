@@ -1,9 +1,10 @@
 import { memo, useCallback, useEffect } from 'react'
+import type { JSX } from 'react'
 
 import type { OverlayProps } from './types'
 import styles from './style.module.css'
 
-const Overlay: React.FC<OverlayProps> = (props: OverlayProps): React.ReactElement | null => {
+const Overlay = (props: OverlayProps): JSX.Element | null => {
   const {
     open = false,
     setOpen,

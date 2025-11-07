@@ -4,7 +4,7 @@ import type { JSX } from 'react'
 import type { TextProps } from './types'
 import styles from './style.module.css'
 
-const Text: React.FC<TextProps> = (props: TextProps): React.ReactElement => {
+const Text = (props: TextProps): JSX.Element => {
   const {
     size = 14,
     bold = false,

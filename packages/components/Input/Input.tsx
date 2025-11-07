@@ -1,11 +1,12 @@
 import { useState, forwardRef, useMemo, useCallback, useImperativeHandle, memo, useRef, useEffect } from 'react'
+import type { JSX } from 'react'
 import { useFocusController, useId } from '@pixel-ui-react/hooks'
 
 import { PxIcon } from '../Icon'
 import type { InputExpose, InputProps } from './types'
 import styles from './style.module.css'
 
-const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React.Ref<InputExpose>): React.ReactElement => {
+const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React.Ref<InputExpose>): JSX.Element => {
   const {
     id,
     value,

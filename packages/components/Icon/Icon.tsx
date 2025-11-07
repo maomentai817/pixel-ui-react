@@ -1,9 +1,10 @@
 import { memo, useMemo } from 'react'
+import type { JSX } from 'react'
 
 import type { IconProps } from './types'
 import styles from './style.module.css'
 
-const Icon: React.FC<IconProps> = (props: IconProps): React.ReactElement => {
+const Icon = (props: IconProps): JSX.Element => {
   const {
     icon,
     size = 14,

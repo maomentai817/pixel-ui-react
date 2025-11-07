@@ -10,7 +10,7 @@ import type { ButtonExpose, ButtonProps } from './types.button'
 import type { ButtonGroupProps } from './types.buttonGroup'
 import styles from './style.module.css'
 
-const Button = forwardRef<ButtonExpose, ButtonProps>((props: ButtonProps, ref: React.Ref<ButtonExpose>): React.ReactElement => {
+const Button = forwardRef<ButtonExpose, ButtonProps>((props: ButtonProps, ref: React.Ref<ButtonExpose>): JSX.Element => {
   const {
     id,
     size,

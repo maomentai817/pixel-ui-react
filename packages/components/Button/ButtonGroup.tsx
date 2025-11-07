@@ -1,10 +1,11 @@
 import { memo } from 'react'
+import type { JSX } from 'react'
 
 import { ButtonGroupContext } from './context'
 import type { ButtonGroupProps } from './types.buttonGroup'
 import styles from './style.module.css'
 
-const ButtonGroup: React.FC<ButtonGroupProps> = (props: ButtonGroupProps): React.ReactElement => {
+const ButtonGroup = (props: ButtonGroupProps): JSX.Element => {
   const {
     size,
     type = 'base',

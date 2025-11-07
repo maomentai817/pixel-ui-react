@@ -43,7 +43,7 @@
   font-size: var(--px-button-font-size);
   font-family: var(--px-font-family);
 
-  .px-icon {
+  i {
     transform: translateY(1px);
   }
 
@@ -94,8 +94,10 @@
   --px-button-bg-shadow-color: var(--px-color-primary-dark-2);
 }
 
-.px-button--primary .px-icon {
-  color: var(--px-color-white);
+.px-button--primary {
+  i {
+    color: var(--px-color-white);
+  }
 }
 
 .px-button--primary:hover {
@@ -110,8 +112,10 @@
   --px-button-bg-shadow-color: var(--px-color-success-dark-2);
 }
 
-.px-button--success .px-icon {
-  color: var(--px-color-white);
+.px-button--success {
+  i {
+    color: var(--px-color-white);
+  }
 }
 
 .px-button--success:hover {
@@ -126,8 +130,10 @@
   --px-button-bg-shadow-color: var(--px-color-warning-dark-2);
 }
 
-.px-button--warning .px-icon {
-  color: var(--px-color-white);
+.px-button--warning {
+  i {
+    color: var(--px-color-white);
+  }
 }
 
 .px-button--warning:hover {
@@ -142,8 +148,10 @@
   --px-button-bg-shadow-color: var(--px-color-danger-dark-2);
 }
 
-.px-button--danger .px-icon {
-  color: var(--px-color-white);
+.px-button--danger {
+  i {
+    color: var(--px-color-white);
+  }
 }
 
 .px-button--danger:hover {
@@ -158,8 +166,10 @@
   --px-button-bg-shadow-color: var(--px-color-sakura-dark-2);
 }
 
-.px-button--sakura .px-icon {
-  color: var(--px-text-color-sakura);
+.px-button--sakura {
+  i {
+    color: var(--px-text-color-sakura);
+  }
 }
 
 .px-button--sakura:hover {

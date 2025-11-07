@@ -1,4 +1,5 @@
 import { memo, useCallback, useMemo, useState, useRef, useEffect } from 'react'
+import type { JSX } from 'react'
 import { addUnit } from '@pixel-ui-react/utils'
 import { useI18n } from '../ConfigProvider/hooks'
 
@@ -10,7 +11,7 @@ import styles from './style.module.css'
 
 import type { PopconfirmProps } from './types'
 
-const Popconfirm: React.FC<PopconfirmProps> = (props: PopconfirmProps): React.ReactElement => {
+const Popconfirm = (props: PopconfirmProps): JSX.Element => {
   const {
     title,
     content,

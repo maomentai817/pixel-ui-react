@@ -1,11 +1,14 @@
 {
-  "name": "@pixel-ui/workspace",
+  "name": "@pixel-ui-react/workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "pnpm --filter @pixel-ui-react/play dev",
+    "docs:dev": "pnpm --filter @pixel-ui-react/docs dev",
+    "docs:build": "pnpm --filter @pixel-ui-react/docs build",
+    "docs:preview": "pnpm --filter @pixel-ui-react/docs preview",
     "test": "run-s test-utils test-hooks test-comp",
     "test-comp": "cross-env NODE_ENV=test pnpm --filter @pixel-ui-react/components test",
     "test-utils": "cross-env NODE_ENV=test pnpm --filter @pixel-ui-react/utils test",
@@ -14,7 +17,7 @@
     "build-comp": "cross-env NODE_ENV=production pnpm --filter @mmt817/pixel-ui-react build",
     "build-hooks": "cross-env NODE_ENV=production pnpm --filter @pixel-ui-react/hooks build",
     "build:dev": "cross-env NODE_ENV=development pnpm --filter @mmt817/pixel-ui-react build:watch",
-    "worklet": "pnpm --filter @pixel-ui-react/worklets worklet",
+    "worklet": "pnpm --filter @pixel-ui-react/components worklet",
     "preview": "vite preview",
     "lint": "eslint packages --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "type-check": "tsc --noEmit"
