@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maomentai817.github.io/pixel-ui-react/sitemap.xml
+

@@ -1,0 +1,30 @@
+{
+  "assets": {
+    "public/robots.txt": "/pixel-ui-react/robots.txt",
+    "public/sitemap.xml": "/pixel-ui-react/sitemap.xml",
+    "public/fonts/PS2P.woff2": "/pixel-ui-react/fonts/PS2P.woff2",
+    "public/fonts/Zpix.woff2": "/pixel-ui-react/fonts/Zpix.woff2",
+    "public/images/Starbucks.png": "/pixel-ui-react/images/Starbucks.png",
+    "public/images/cat.gif": "/pixel-ui-react/images/cat.gif",
+    "public/images/e.png": "/pixel-ui-react/images/e.png",
+    "public/images/favicon.ico": "/pixel-ui-react/images/favicon.ico",
+    "public/images/homelogo.png": "/pixel-ui-react/images/homelogo.png",
+    "public/images/image1_portrait.jpg": "/pixel-ui-react/images/image1_portrait.jpg",
+    "public/images/monaka.jpg": "/pixel-ui-react/images/monaka.jpg",
+    "public/images/pet.gif": "/pixel-ui-react/images/pet.gif",
+    "public/images/taffy.gif": "/pixel-ui-react/images/taffy.gif",
+    "public/images/twoking.gif": "/pixel-ui-react/images/twoking.gif",
+    "public/images/xinlang.jpg": "/pixel-ui-react/images/xinlang.jpg",
+    "public/images/xtaffy.png": "/pixel-ui-react/images/xtaffy.png",
+    "umi.css": "/pixel-ui-react/umi.6fd96b95.css",
+    "umi.js": "/pixel-ui-react/umi.07fd9c95.js",
+    "meta__docs.js": "/pixel-ui-react/meta__docs.154cdd01.async.js",
+    "nm__dumi__dist__client__pages__404.js": "/pixel-ui-react/nm__dumi__dist__client__pages__404.8a56cc33.async.js",
+    "dumi__tmp-production__dumi__theme__ContextWrapper.js": "/pixel-ui-react/dumi__tmp-production__dumi__theme__ContextWrapper.4d6a255c.async.js",
+    "nm__dumi__theme-default__layouts__DocLayout__index.js": "/pixel-ui-react/nm__dumi__theme-default__layouts__DocLayout__index.4c11a2b6.async.js",
+    "dumi__pages__index.js": "/pixel-ui-react/dumi__pages__index.7e3f4a9b.async.js",
+    "docs__components__button.md.js": "/pixel-ui-react/docs__components__button.md.5b377f80.async.js",
+    "docs__getting-started.md.js": "/pixel-ui-react/docs__getting-started.md.d354d5b7.async.js",
+    "nm__dumi__dist__client__pages__Demo__index.js": "/pixel-ui-react/nm__dumi__dist__client__pages__Demo__index.a9006ad2.async.js"
+  }
+}
