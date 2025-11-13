@@ -31,6 +31,7 @@ const Overlay = (props: OverlayProps): JSX.Element | null => {
 
   const classNames = [
     className,
+    'px-overlay',
     styles['px-overlay'],
     ...(Array.isArray(overlayClass) ? overlayClass : [overlayClass]),
     grid ? styles['is-grid-basic'] : void 0,

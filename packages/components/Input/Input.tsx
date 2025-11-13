@@ -89,6 +89,7 @@ const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React
 
   const classNames = [
     className,
+    'px-input',
     styles['px-input'],
     type ? styles[`px-input--${type}`] : '',
     size ? styles[`px-input--${size}`] : '',
@@ -97,7 +98,17 @@ const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React
     append ? styles['is-append'] : '',
     prefix ? styles['is-prefix'] : '',
     suffix ? styles['is-suffix'] : '',
-    suffix ? styles['is-focus'] : '',
+    isFocused ? styles['is-focus'] : '',
+  ].filter(Boolean).join(' ')
+
+  const appendClassNames = [
+    'px-input__append',
+    styles['px-input__append'],
+  ].filter(Boolean).join(' ')
+
+  const prependClassNames = [
+    'px-input__prepend',
+    styles['px-input__prepend'],
   ].filter(Boolean).join(' ')
 
   // pwd 可见切换
@@ -144,7 +155,7 @@ const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React
       {type !== 'textarea' ? (
         <>
           {prepend ? (
-            <div className={styles['px-input__prepend']}>
+            <div className={prependClassNames}>
               {prepend}
             </div>
           ) : null}
@@ -202,7 +213,7 @@ const Input = forwardRef<InputExpose, InputProps>((props: InputProps, ref: React
             ) : null}
           </div>
           {append ? (
-            <div className={styles['px-input__append']}>
+            <div className={appendClassNames}>
               {append}
             </div>
           ) : null}

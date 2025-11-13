@@ -61,5 +61,6 @@ export interface TextProps {
    * @default false
    */
   compact?: boolean
+  style?: React.CSSProperties
   children?: React.ReactNode
 }

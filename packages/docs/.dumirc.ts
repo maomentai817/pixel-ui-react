@@ -15,6 +15,7 @@ export default defineConfig({
   links: [
     { rel: 'icon', href: '/pixel-ui-react/images/favicon.ico' },
   ],
+  apiParser: {},
   metas: [
     // 基础 SEO meta
     { name: 'description', content: '基于CSS Houdini的像素风React组件库，支持像素风格渲染、自定义像素字体和像素边框，致力于打造独特的Web UI体验。' },
@@ -59,7 +60,7 @@ export default defineConfig({
     '@': path.resolve(__dirname, 'src'),
   },
   // SSR 配置
-  ssr: {},
+  ssr: false,
   // 静态导出配置（生成静态HTML，提升SEO）
   exportStatic: {},
   // 配置 demo 目录
@@ -68,6 +69,4 @@ export default defineConfig({
   },
   // 启用 mfsu 加速
   mfsu: false,
-  // 配置侧边栏（通过文件系统自动生成，也可以手动配置）
-  // 这里我们使用文件系统自动生成，但可以通过 themeConfig.sidebar 手动配置
 });

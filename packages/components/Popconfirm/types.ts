@@ -17,13 +17,6 @@ export interface PopconfirmProps {
    */
   title: React.ReactNode
   /**
-   * @property content
-   * @type React.ReactNode
-   * @description 提示内容
-   * @default -
-   */
-  content?: React.ReactNode
-  /**
    * @property placement
    * @type enum - top | top-start | top-end | bottom | bottom-start | bottom-end | left | left-start | left-end | right | right-start | right-end
    * @description 提示出现位置
@@ -100,6 +93,7 @@ export interface PopconfirmProps {
    * @default -
    */
   actions?: React.ReactNode
+  className?: string
   children?: React.ReactNode,
   onVisibleChange?: (visible: boolean) => void,
   onConfirm?: (e: React.MouseEvent<HTMLButtonElement>) => void,
