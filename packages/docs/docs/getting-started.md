@@ -42,6 +42,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ConfigProvider } from '@mmt817/pixel-ui-react';
 import '@mmt817/pixel-ui-react/dist/index.css';
+import 'virtual:uno.css' // 可选：若要使用，需额外安装 uno.css
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

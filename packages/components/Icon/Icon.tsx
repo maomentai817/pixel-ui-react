@@ -31,6 +31,7 @@ const Icon = (props: IconProps): JSX.Element => {
 
   const classNames = [
     className,
+    'px-icon',
     'hn',
     icon ? `hn-${icon}` : '',
     styles['px-icon'],

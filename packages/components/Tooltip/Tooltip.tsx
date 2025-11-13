@@ -150,9 +150,20 @@ const Tooltip = (props: TooltipProps): JSX.Element => {
   // 虚拟节点绑定
   useEventsToTriggerNode(props, virtualRef as React.RefObject<HTMLElement | null>, virtualTriggerEvents, closeFinal)
 
+  const classNames = [
+    'px-tooltip',
+    styles['px-tooltip'],
+  ].filter(Boolean).join(' ')
+
   const popperClassName = [
+    'px-tooltip__popper',
     styles['px-tooltip__popper'],
     styles[`is-${effect}`],
+  ].join(' ')
+
+  const triggerClassName = [
+    'px-tooltip__trigger',
+    styles['px-tooltip__trigger'],
   ].join(' ')
 
   useEffect(() => {
@@ -213,13 +224,13 @@ const Tooltip = (props: TooltipProps): JSX.Element => {
 
   return (
     <div
-      className={styles['px-tooltip']}
+      className={classNames}
       ref={containerNode}
       data-testid="px-tooltip"
     >
       {!virtualTriggering && (
         <div
-          className={styles['px-tooltip__trigger']}
+          className={triggerClassName}
           ref={triggerNode}
           data-testid="px-tooltip__trigger"
           {...triggerEvents}

@@ -18,6 +18,7 @@ a {
   &:hover,
   &:focus {
     color: var(--px-color-primary-light-3);
+    text-decoration: underline;
   }
 
   &:active {

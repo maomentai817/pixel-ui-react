@@ -25,6 +25,7 @@ const ButtonGroup = (props: ButtonGroupProps): JSX.Element => {
   }
 
   const classNames = [
+    'px-button-group',
     styles['px-button-group'],
     type ? styles[`px-button-group--${type}`] : ''
   ].filter(Boolean).join(' ');

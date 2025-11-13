@@ -142,6 +142,7 @@ function App() {
       </PxButtonGroup>
       <PxButtonGroup type="success" size="large">
         <PxButton>Button1</PxButton>
+        <PxButton>Button2</PxButton>
         <PxButton>Button3</PxButton>
       </PxButtonGroup>
       <PxButtonGroup type="warning">
@@ -253,14 +254,14 @@ function App() {
       </div>
       <hr />
       <PxPopconfirm title="Are you sure to delete this?">
-        <PxButton>Delete</PxButton>
+        <PxButton>popconfirm delete</PxButton>
       </PxPopconfirm>
       <hr />
       <PxButton onClick={() => setLocale('zh-CN')}>中文</PxButton>
       <PxButton onClick={() => setLocale('en')}>English</PxButton>
       <PxConfigProvider locale={locale}>
         <PxPopconfirm title="Are you sure to delete this?">
-          <PxButton>Current Locale: {locale}</PxButton>
+          <PxButton>current locale: {locale}</PxButton>
         </PxPopconfirm>
       </PxConfigProvider>
       <hr />

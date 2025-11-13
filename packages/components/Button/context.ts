@@ -1,6 +1,6 @@
 import { createContext } from 'react';
-import type { ButtonGroupContext } from './types.buttonGroup';
+import type { ButtonGroupContext as ButtonGroupContextType } from './types.buttonGroup';
 
-const ButtonGroupContext = createContext<ButtonGroupContext | null>(null)
+const ButtonGroupContext = createContext<ButtonGroupContextType | null>(null)
 
 export { ButtonGroupContext };

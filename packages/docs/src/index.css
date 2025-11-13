@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Zpix';
-  src: url('/pixel-ui/fonts/Zpix.woff2') format('woff2');
+  src: url('/pixel-ui-react/fonts/Zpix.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'PS2P';
-  src: url('/pixel-ui/fonts/PS2P.woff2') format('woff2');
+  src: url('/pixel-ui-react/fonts/PS2P.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,10 @@
 }
 
 :root {
-  --dumi-default-font-family: "Zpix", -apple-system, BlinkMacSystemFont, sans-serif;
+  --dumi-default-font-family: "Zpix",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   --dumi-default-code-font-family: "PS2P", "Zpix", monospace;
 }
 
@@ -34,6 +37,12 @@ input,
 pre,
 code {
   font-size: 0.75rem !important;
+  font-family: var(--dumi-default-code-font-family) !important;
+}
+
+.px-text,
+.px-popconfirm,
+.px-tooltip__popper {
   font-family: var(--dumi-default-code-font-family) !important;
 }
 
@@ -83,6 +92,10 @@ body.is-homepage.is-homepage-scrolled .dumi-default-header {
   backdrop-filter: none;
 }
 
+[data-dumi-tooltip]:before {
+  font-family: var(--dumi-default-font-family) !important;
+}
+
 .dumi-default-doc-layout {
   padding-top: 100px;
   background-color: #fff !important;
@@ -98,6 +111,12 @@ body.is-homepage.is-homepage-scrolled .dumi-default-header {
   .dumi-default-tabs-tab-btn {
     font-weight: 500;
   }
+}
+
+.dumi-default-sidebar {
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
 }
 
 .dumi-default-sidebar-group {

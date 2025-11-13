@@ -146,7 +146,7 @@ importers:
         version: 5.9.3
       unocss:
         specifier: 66.1.0-beta.6
-        version: 66.1.0-beta.6(postcss@8.5.6)(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
+        version: 66.1.0-beta.6(@unocss/webpack@66.1.0-beta.6(webpack@5.102.1))(postcss@8.5.6)(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
       vite:
         specifier: ^5.1.4
         version: 5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0)
@@ -2726,6 +2726,11 @@ packages:
     resolution: {integrity: sha512-/3yAxOJm8UFiNOBcuRQELrgQX55fJnb0wBNNSeW1YsE5vLCDNvP0acibDmqyKk2O+Ch9yw8duC60FKIptVzJhQ==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0
+
+  '@unocss/webpack@66.1.0-beta.6':
+    resolution: {integrity: sha512-c6RSh8l2R2wBJ/PBUGLg0GCMrcLOWoQrKf+EEadNsFfXFFC2FqGrGNCDHkA3IpJXZdLiVAYVf4RAWEeMa1EEUQ==}
+    peerDependencies:
+      webpack: ^4 || ^5
 
   '@utoo/pack-darwin-arm64@0.0.1-alpha.64':
     resolution: {integrity: sha512-Bypb1Sd5w+9EEPhprkvx9oEVtC/imr0rcB3zcIFe++3AoSrt6byQIFWEJuC2oreV1A1J5bFjhDurte5pYHU8Pw==}
@@ -5621,6 +5626,9 @@ packages:
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
+  magic-string@0.30.21:
+    resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
@@ -8114,6 +8122,10 @@ packages:
     resolution: {integrity: sha512-gwXJnPRewT4rT7sBi/IvxKTjsms7jX7QIDLOClApuZwR49SXbrB1z2NLUZ+vDHyqCj/n58OzRRqaW+B8OZi8vg==}
     engines: {node: '>=18.12.0'}
 
+  unplugin@2.3.10:
+    resolution: {integrity: sha512-6NCPkv1ClwH+/BGE9QeoTIl09nuiAt0gS28nn1PvYXsGKRwM2TCbFA2QiilmehPDTXIe684k4rZI1yl3A1PCUw==}
+    engines: {node: '>=18.12.0'}
+
   unquote@1.1.1:
     resolution: {integrity: sha512-vRCqFv6UhXpWxZPyGDh/F3ZpNv8/qo7w6iufLpQg9aKnQ71qM4B5KiI7Mia9COcjEhrO9LueHpMYjYzsWH3OIg==}
 
@@ -8382,6 +8394,9 @@ packages:
   webpack-sources@3.3.3:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
   webpack@5.102.1:
     resolution: {integrity: sha512-7h/weGm9d/ywQ6qzJ+Xy+r9n/3qgp/thalBbpOi5i223dPXKi04IBtqPN9nTd+jBc7QKfvDbaBnFipYp4sJAUQ==}
@@ -8663,7 +8678,7 @@ snapshots:
 
   '@babel/generator@7.2.0':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       jsesc: 2.5.2
       lodash: 4.17.21
       source-map: 0.5.7
@@ -8690,7 +8705,7 @@ snapshots:
   '@babel/helper-module-imports@7.27.1':
     dependencies:
       '@babel/traverse': 7.28.5
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
     transitivePeerDependencies:
       - supports-color
 
@@ -8717,7 +8732,7 @@ snapshots:
   '@babel/helper-simple-access@7.27.1':
     dependencies:
       '@babel/traverse': 7.28.5
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
     transitivePeerDependencies:
       - supports-color
 
@@ -8732,7 +8747,7 @@ snapshots:
   '@babel/helpers@7.28.4':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@babel/highlight@7.25.9':
     dependencies:
@@ -8853,7 +8868,7 @@ snapshots:
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@babel/traverse@7.28.5':
     dependencies:
@@ -10086,7 +10101,7 @@ snapshots:
 
   '@svgr/hast-util-to-babel-ast@6.5.1':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       entities: 4.5.0
 
   '@svgr/plugin-jsx@6.5.1(@svgr/core@6.5.1)':
@@ -10254,23 +10269,23 @@ snapshots:
   '@types/babel__core@7.20.5':
     dependencies:
       '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       '@types/babel__generator': 7.27.0
       '@types/babel__template': 7.4.4
       '@types/babel__traverse': 7.28.0
 
   '@types/babel__generator@7.27.0':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
 
   '@types/babel__traverse@7.28.0':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@types/debug@4.1.12':
     dependencies:
@@ -11225,6 +11240,20 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
+  '@unocss/webpack@66.1.0-beta.6(webpack@5.102.1)':
+    dependencies:
+      '@ampproject/remapping': 2.3.0
+      '@unocss/config': 66.1.0-beta.6
+      '@unocss/core': 66.1.0-beta.6
+      chokidar: 3.6.0
+      magic-string: 0.30.21
+      tinyglobby: 0.2.15
+      unplugin: 2.3.10
+      unplugin-utils: 0.2.5
+      webpack: 5.102.1
+      webpack-sources: 3.3.3
+    optional: true
+
   '@utoo/pack-darwin-arm64@0.0.1-alpha.64':
     optional: true
 
@@ -11390,7 +11419,7 @@ snapshots:
       '@vue/compiler-ssr': 3.5.22
       '@vue/shared': 3.5.22
       estree-walker: 2.0.2
-      magic-string: 0.30.19
+      magic-string: 0.30.21
       postcss: 8.5.6
       source-map-js: 1.2.1
 
@@ -11779,7 +11808,7 @@ snapshots:
   babel-plugin-jest-hoist@29.6.3:
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.28.0
 
@@ -14395,7 +14424,7 @@ snapshots:
   istanbul-lib-instrument@5.2.1:
     dependencies:
       '@babel/core': 7.28.5
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.5
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
       semver: 6.3.1
@@ -14785,6 +14814,10 @@ snapshots:
   macos-release@3.4.0: {}
 
   magic-string@0.30.19:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+
+  magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
@@ -17815,7 +17848,7 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@66.1.0-beta.6(postcss@8.5.6)(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
+  unocss@66.1.0-beta.6(@unocss/webpack@66.1.0-beta.6(webpack@5.102.1))(postcss@8.5.6)(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@unocss/astro': 66.1.0-beta.6(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
       '@unocss/cli': 66.1.0-beta.6
@@ -17837,6 +17870,7 @@ snapshots:
       '@unocss/transformer-variant-group': 66.1.0-beta.6
       '@unocss/vite': 66.1.0-beta.6(vite@5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0))(vue@3.5.22(typescript@5.9.3))
     optionalDependencies:
+      '@unocss/webpack': 66.1.0-beta.6(webpack@5.102.1)
       vite: 5.4.20(@types/node@24.6.2)(less@4.4.2)(lightningcss@1.22.1)(sass@1.93.3)(terser@5.44.0)
     transitivePeerDependencies:
       - postcss
@@ -17849,6 +17883,14 @@ snapshots:
     dependencies:
       pathe: 2.0.3
       picomatch: 4.0.3
+
+  unplugin@2.3.10:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      acorn: 8.15.0
+      picomatch: 4.0.3
+      webpack-virtual-modules: 0.6.2
+    optional: true
 
   unquote@1.1.1: {}
 
@@ -18135,6 +18177,9 @@ snapshots:
       javascript-stringify: 2.1.0
 
   webpack-sources@3.3.3: {}
+
+  webpack-virtual-modules@0.6.2:
+    optional: true
 
   webpack@5.102.1:
     dependencies:

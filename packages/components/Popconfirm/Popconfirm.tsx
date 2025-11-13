@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo, useState, useRef, useEffect } from 'react'
+import { memo, useCallback, useMemo, useState, useEffect } from 'react'
 import type { JSX } from 'react'
 import { addUnit } from '@pixel-ui-react/utils'
 import { useI18n } from '../ConfigProvider/hooks'
@@ -14,7 +14,6 @@ import type { PopconfirmProps } from './types'
 const Popconfirm = (props: PopconfirmProps): JSX.Element => {
   const {
     title,
-    content,
     placement,
     confirmButtonText,
     cancelButtonText,
@@ -37,7 +36,6 @@ const Popconfirm = (props: PopconfirmProps): JSX.Element => {
   const t = useI18n()
 
   const style = useMemo(() => ({ width: addUnit(props.width) }), [width])
-  const virtualTriggerRef = useRef<HTMLDivElement>(null)
 
   const handleSetInnerVisible = useCallback((_visible: boolean) => {
     if (visible === void 0) {
@@ -58,9 +56,14 @@ const Popconfirm = (props: PopconfirmProps): JSX.Element => {
     onVisibleChange?.(visible)
   }, [onVisibleChange])
 
+  const classNames = [
+    'px-popconfirm',
+    styles['px-popconfirm'],
+  ].filter(Boolean).join(' ')
+
   const captureContent = useMemo(() => {
     return (
-      <div className={styles['px-popconfirm']} style={style} data-testid="px-popconfirm">
+      <div className={classNames} style={style} data-testid="px-popconfirm">
         <div className={styles['px-popconfirm__main']}>
           {!hideIcon && icon ? (
             <PxIcon
@@ -99,7 +102,6 @@ const Popconfirm = (props: PopconfirmProps): JSX.Element => {
     )
   }, [
     t,
-    content,
     style,
     icon,
     iconColor,
@@ -111,7 +113,7 @@ const Popconfirm = (props: PopconfirmProps): JSX.Element => {
   ])
 
   const handleTriggerClick = useCallback(() => {
-    if (visible !== void 0 || innerVisible) return
+    if (visible !== void 0) return
     handleSetInnerVisible(!innerVisible)
   }, [visible, innerVisible])
 
@@ -122,18 +124,16 @@ const Popconfirm = (props: PopconfirmProps): JSX.Element => {
   }, [visible])
 
   return (
-    <>
-      <PxTooltip
-        visible={innerVisible}
-        placement={placement}
-        hideTimeout={hideTimeout}
-        content={captureContent}
-        virtualTriggering
-        virtualRef={virtualTriggerRef}
-        onVisibleChange={handleVisibleChange}
-      ></PxTooltip>
-      <div ref={virtualTriggerRef} className="inline-block" onClick={handleTriggerClick}>{children}</div>
-    </>
+    <PxTooltip
+      visible={innerVisible}
+      trigger="click"
+      placement={placement}
+      hideTimeout={hideTimeout}
+      content={captureContent}
+      onVisibleChange={handleVisibleChange}
+    >
+      <div onClick={handleTriggerClick}>{children}</div>
+    </PxTooltip>
   )
 }
 

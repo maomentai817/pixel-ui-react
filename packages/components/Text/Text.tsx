@@ -13,6 +13,7 @@ const Text = (props: TextProps): JSX.Element => {
     tag = 'span',
     compact = false,
     type = 'base',
+    style = {},
     children,
   } = props
 
@@ -22,10 +23,12 @@ const Text = (props: TextProps): JSX.Element => {
     color: color ?? void 0,
     fontSize: `${size}px`,
     fontWeight: bold ? 'bold' : void 0,
-    textAlign: align ?? void 0
-  }), [color, size, bold, align])
+    textAlign: align ?? void 0,
+    ...style
+  }), [color, size, bold, align, style])
 
   const classNames = [
+    'px-text',
     styles['px-text'],
     type ? styles[`px-text--${type}`] : '',
     compact ? styles['is-compact'] : '',

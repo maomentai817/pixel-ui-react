@@ -55,6 +55,7 @@ const Button = forwardRef<ButtonExpose, ButtonProps>((props: ButtonProps, ref: R
 
   const classNames = [
     className,
+    'px-button',
     styles['px-button'],
     typeValue ? styles[`px-button--${typeValue}`] : '',
     sizeValue ? styles[`px-button--${sizeValue}`] : '',
