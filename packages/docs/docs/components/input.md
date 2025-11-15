@@ -22,7 +22,7 @@ Input 为受控组件, 它 **总会显示 React 绑定值**。
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input, setInput] = useState('');
@@ -44,7 +44,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input, setInput] = useState('');
@@ -67,7 +67,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input, setInput] = useState('');
@@ -90,7 +90,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input, setInput] = useState('');
@@ -115,7 +115,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput, PxIcon, PxText } from '@mmt817/pixel-ui-react';
+import { PxInput, PxIcon, PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input1, setInput1] = useState('');
@@ -151,7 +151,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [textarea, setTextarea] = useState('');
@@ -181,7 +181,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput, PxButton, PxIcon } from '@mmt817/pixel-ui-react';
+import { PxInput, PxButton, PxIcon } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input1, setInput1] = useState('');
@@ -248,7 +248,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxInput } from '@mmt817/pixel-ui-react';
+import { PxInput } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [input1, setInput1] = useState('');

@@ -18,7 +18,7 @@ description: Pixel UI React Button 组件文档
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -66,7 +66,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -98,7 +98,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton, PxIcon } from '@mmt817/pixel-ui-react';
+import { PxButton, PxIcon } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -122,7 +122,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButtonGroup, PxButton } from '@mmt817/pixel-ui-react';
+import { PxButtonGroup, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -177,7 +177,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -197,7 +197,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -234,7 +234,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -257,7 +257,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton, PxButtonGroup, PxText } from '@mmt817/pixel-ui-react';
+import { PxButton, PxButtonGroup, PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -317,7 +317,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const handleBtnClick = () => {
@@ -345,7 +345,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (

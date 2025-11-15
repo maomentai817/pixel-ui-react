@@ -26,7 +26,7 @@ description: Pixel UI React Overlay 组件文档
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);
@@ -69,7 +69,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);
@@ -113,7 +113,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);
@@ -152,7 +152,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);
@@ -189,7 +189,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);
@@ -234,7 +234,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxOverlay, PxButton } from '@mmt817/pixel-ui-react';
+import { PxOverlay, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);

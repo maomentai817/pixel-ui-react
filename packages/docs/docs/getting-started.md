@@ -11,19 +11,19 @@ description: 🐱 PixelUI 像素风React组件库
 
 :::code-group
 ```shell [npm]
-$ npm i @mmt817/pixel-ui --save
+$ npm i @duheng1992/pixel-ui-react --save
 ```
 
 ```shell [yarn]
-$ yarn add @mmt817/pixel-ui
+$ yarn add @duheng1992/pixel-ui-react
 ```
 
 ```shell [pnpm]
-$ pnpm add @mmt817/pixel-ui
+$ pnpm add @duheng1992/pixel-ui-react
 ```
 
 ```shell [bun]
-$ bun add @mmt817/pixel-ui
+$ bun add @duheng1992/pixel-ui-react
 ```
 
 ```shell [deno]
@@ -40,8 +40,8 @@ $ 别用 deno, 会变得不幸
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { ConfigProvider } from '@mmt817/pixel-ui-react';
-import '@mmt817/pixel-ui-react/dist/index.css';
+import { ConfigProvider } from '@duheng1992/pixel-ui-react';
+import '@duheng1992/pixel-ui-react/dist/index.css';
 import 'virtual:uno.css' // 可选：若要使用，需额外安装 uno.css
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -55,7 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 ```tsx | pure
 // App.tsx
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default function App() {
   return <PxButton>START</PxButton>;
@@ -67,7 +67,7 @@ export default function App() {
 Pixel-UI 提供了 ESModule 构建, 支持 TreeShaking, 推荐按需引入以减少打包体积。
 
 ```tsx | pure
-import { PxButton } from '@mmt817/pixel-ui-react';
+import { PxButton } from '@duheng1992/pixel-ui-react';
 
 export default function App() {
   return <PxButton>START</PxButton>;
@@ -85,7 +85,7 @@ export default function App() {
 ## 🧰 使用示例
 
 ```tsx | pure
-import { PxCard } from '@mmt817/pixel-ui-react';
+import { PxCard } from '@duheng1992/pixel-ui-react';
 
 export default function App() {
   return (

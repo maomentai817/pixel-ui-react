@@ -4,9 +4,9 @@
 
 <div align="center">
 
-[![npm](https://img.shields.io/npm/v/@mmt817/pixel-ui)](https://www.npmjs.com/package/@mmt817/pixel-ui)
-[![node](https://img.shields.io/badge/node-%20%3E%3D%2020-47c219)](https://github.com/maomentai817/pixel-ui)
-[![downloads](https://img.shields.io/npm/dw/@mmt817/pixel-ui)](https://www.npmcharts.com/compare/@mmt817/pixel-ui)
+[![npm](https://img.shields.io/npm/v/@duheng1992/pixel-ui-react)](https://www.npmjs.com/package/@duheng1992/pixel-ui-react)
+[![node](https://img.shields.io/badge/node-%20%3E%3D%2020-47c219)](https://github.com/maomentai817/pixel-ui-react)
+[![downloads](https://img.shields.io/npm/dw/@duheng1992/pixel-ui-react)](https://www.npmcharts.com/compare/@duheng1992/pixel-ui-react)
 
 </div>
 
@@ -37,11 +37,11 @@ Pixel UI 基于 CSS Houdini 实现像素风格渲染, 因此要求浏览器支�
 
 ```bash
 # 使用 npm
-npm i @mmt817/pixel-ui-react
+npm i @duheng1992/pixel-ui-react
 
 # 或使用 pnpm / yarn
-pnpm add @mmt817/pixel-ui-react
-yarn add @mmt817/pixel-ui-react
+pnpm add @duheng1992/pixel-ui-react
+yarn add @duheng1992/pixel-ui-react
 ```
 
 ## 🚀 项目启动 Quick Start

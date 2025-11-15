@@ -24,7 +24,7 @@ Config Provider 还支持拓展翻译文本对象, 通过配置一个类型为 `
 
 ```tsx
 import React, { useState, useMemo } from 'react';
-import { PxConfigProvider, PxButton, PxPopconfirm } from '@mmt817/pixel-ui-react';
+import { PxConfigProvider, PxButton, PxPopconfirm } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [language, setLanguage] = useState<'en' | 'zh-CN' | 'zh-TW' | 'ja'>('en');

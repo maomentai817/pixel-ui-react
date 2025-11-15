@@ -61,7 +61,7 @@ import '@hackernoon/pixel-icon-library/fonts/iconfont.css'
 
 ```tsx
 import React from 'react';
-import { PxIcon } from '@mmt817/pixel-ui-react';
+import { PxIcon } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -100,7 +100,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxIcon } from '@mmt817/pixel-ui-react';
+import { PxIcon } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -144,7 +144,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxIcon } from '@mmt817/pixel-ui-react';
+import { PxIcon } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -162,7 +162,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxInput, PxIcon } from '@mmt817/pixel-ui-react';
+import { PxInput, PxIcon } from '@duheng1992/pixel-ui-react';
 
 const IconList = {
   "categories": [

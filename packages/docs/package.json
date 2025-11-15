@@ -13,7 +13,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
-    "@mmt817/pixel-ui-react": "workspace:*",
+    "@duheng1992/pixel-ui-react": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
