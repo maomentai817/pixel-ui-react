@@ -1,5 +1,5 @@
 import React from 'react';
-import '@mmt817/pixel-ui-react/dist/index.css';
+import '@duheng1992/pixel-ui-react/dist/index.css';
 import './index.css';
 
 // 这里导出 components, 用于在文档中使用

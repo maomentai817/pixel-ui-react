@@ -20,7 +20,7 @@ description: Pixel UI React Tooltip 组件文档
 
 ```tsx
 import React from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -146,7 +146,7 @@ Tooltip 默认是 `hover` 触发, 也可以通过 `trigger` 属性来设置触�
 
 ```tsx
 import React from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -181,7 +181,7 @@ Tooltip 组件内置了两个主题: `light` 和 `dark`。
 
 ```tsx
 import React from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -205,7 +205,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxTooltip, PxButton, PxText } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton, PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -234,7 +234,7 @@ Tooltip 是一个基于 [popperjs](https://popper.js.org/docs/v2/) 二次封装�
 
 ```tsx
 import React, { useState } from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [disabled, setDisabled] = useState(false);
@@ -259,7 +259,7 @@ export default () => {
 
 ```tsx
 import React, { useRef } from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const virtualTrigger = useRef<HTMLButtonElement>(null);
@@ -287,7 +287,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxTooltip, PxButton } from '@mmt817/pixel-ui-react';
+import { PxTooltip, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [visible, setVisible] = useState(false);

@@ -18,7 +18,7 @@ description: Pixel UI React Text 组件文档
 
 ```tsx
 import React from 'react';
-import { PxText } from '@mmt817/pixel-ui-react';
+import { PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -50,7 +50,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxText } from '@mmt817/pixel-ui-react';
+import { PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -76,7 +76,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxText } from '@mmt817/pixel-ui-react';
+import { PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -97,7 +97,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxText } from '@mmt817/pixel-ui-react';
+import { PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -129,7 +129,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxText } from '@mmt817/pixel-ui-react';
+import { PxText } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (

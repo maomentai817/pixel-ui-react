@@ -11,7 +11,7 @@ import {
   PxConfigProvider,
   type ButtonExpose,
   type Locale
-} from '@mmt817/pixel-ui-react'
+} from '@duheng1992/pixel-ui-react'
 
 import './App.css'
 

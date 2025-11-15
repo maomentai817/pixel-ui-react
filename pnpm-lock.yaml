@@ -11,7 +11,7 @@ importers:
       '@hackernoon/pixel-icon-library':
         specifier: ^1.0.5
         version: 1.0.6
-      '@mmt817/pixel-ui-react':
+      '@duheng1992/pixel-ui-react':
         specifier: workspace:*
         version: link:packages/core
       '@pixel-ui-react/hooks':
@@ -200,7 +200,7 @@ importers:
 
   packages/docs:
     dependencies:
-      '@mmt817/pixel-ui-react':
+      '@duheng1992/pixel-ui-react':
         specifier: workspace:*
         version: link:../core
       react:

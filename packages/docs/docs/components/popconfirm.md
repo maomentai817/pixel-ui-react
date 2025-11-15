@@ -20,7 +20,7 @@ Popconfirm 提供了 9 种展示位置
 
 ```tsx
 import React from 'react';
-import { PxPopconfirm, PxButton } from '@mmt817/pixel-ui-react';
+import { PxPopconfirm, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -148,7 +148,7 @@ Popconfirm 属性同 Tooltip 类似, 是基于 Tooltip 封装的拓展
 
 ```tsx
 import React from 'react';
-import { PxPopconfirm, PxButton } from '@mmt817/pixel-ui-react';
+import { PxPopconfirm, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   return (
@@ -165,7 +165,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { PxPopconfirm, PxButton } from '@mmt817/pixel-ui-react';
+import { PxPopconfirm, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const [clicked, setClicked] = useState(false);
@@ -211,7 +211,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { PxPopconfirm, PxButton } from '@mmt817/pixel-ui-react';
+import { PxPopconfirm, PxButton } from '@duheng1992/pixel-ui-react';
 
 export default () => {
   const confirmEvent = () => {
