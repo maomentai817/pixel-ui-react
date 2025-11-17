@@ -54,7 +54,7 @@
     "@hackernoon/pixel-icon-library": "^1.0.5",
     "@popperjs/core": "^2.11.8",
     "react-transition-group": "^4.4.5",
-    "async-validator": "^4.2.5"
+    "react-intl": "^7.1.11"
   },
   "devDependencies": {
     "@types/react-transition-group": "^4.4.12",

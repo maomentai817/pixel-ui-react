@@ -86,13 +86,14 @@ export default defineConfig({
         'react-dom',
         '@hackernoon/pixel-icon-library',
         '@popperjs/core',
-        'async-validator'
+        'react-intl',
+        'react-transition-group'
       ],
       treeshake: {
         propertyReadSideEffects: false
       },
       output: {
-        assetFileNames: (assetInfo) => {
+        assetFileNames: (assetInfo: any) => {
           if (assetInfo.name === 'style.css') return 'index.css'
           if (
             assetInfo.type === 'asset' &&
