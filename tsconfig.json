@@ -42,7 +42,10 @@
       ],
       "@pixel-ui-react/core": [
         "./packages/core"
-      ]
+      ],
+      "@pixel-ui-react/vite-plugins": [
+        "./libs/vite-plugins"
+      ],
     }
   },
   "include": [
